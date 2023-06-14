@@ -99,19 +99,10 @@
                                 {% endif %}
                             </ul>
                         </li>
-                    </ul>
-                    <ul>
                         <li class="nav-item">
                             <a class="{% if grand_total %}text-info{% else %}text-black{% endif %} nav-link" href="">
                                 <div class="text-center shop-icon">
-                                    <div><i class="fas fa-shopping-bag fa-sm"></i></div>
-                                    <p>
-                                        {% if grand_total %}
-                                            ${{ grand_total|floatformat:2 }}
-                                        {% else %}
-                                            £0.00
-                                        {% endif %}
-                                    </p>
+                                    <div><i class="fas fa-shopping-bag fa-md"></i></div>
                                 </div>
                             </a>
                         </li>
@@ -124,6 +115,9 @@
                 </div>
             </div>
         </nav>
+        <div class="banner text-black text-center py-1">
+            <p>10% OFF BOTTLE ORDERS OVER £30 | 15% OFF WHOLE CASES</p>
+        </div>
     </header>
 
 
