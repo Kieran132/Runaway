@@ -18,6 +18,36 @@ h1 {
     color:black;
 }
 
+/* Header styling */
+
+.nav-item {
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 4rem;
+    display: flex;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #07b3a3;
+}
+
+.home-nav {
+    background-color: #ffdb58;
+}
+
+.home-search{
+    margin-left: 60px;
+}
+
+.search-btn{
+    color: #07b3a3;
+}
+
+.shop-icon{
+    color: #07b3a3;
+}
+
+
 /* Footer Styling */
 
 .footer-container {
@@ -36,15 +66,15 @@ h1 {
 }
 
 .footer-social li a {
-    color: #3F2929;
+    color: #07b3a3;
     ;
 }
 
-
 .home-footer {
     padding-top: 10px;
+    background-color: #ffdb58;
 }
 
 .copyright {
-    color: #3F2929;
+    color: #07b3a3;
 }
