@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    padding-bottom: 60px;
+    color: azure;
+}
+
+h1 {
+    font-family: Oswald, sans-serif;
+    color:black;
+}
+
+/* Footer Styling */
+
+.footer-container {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    letter-spacing: 60px;
+    font-size: 20px;
+}
+
+.footer-social li a {
+    color: #3F2929;
+    ;
+}
+
+
+.home-footer {
+    padding-top: 10px;
+}
+
+.copyright {
+    color: #3F2929;
+}
