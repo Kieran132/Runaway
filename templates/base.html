@@ -66,9 +66,6 @@
                                 <li><a class="dropdown-item" href="#">Gift Cards</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Book A Tour</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -77,6 +74,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Taproom & Bottle Shop</a></li>
                                 <li><a class="dropdown-item" href="#">Plan Your Visit</a></li>
+                                <li><a class="dropdown-item" href="#">Book A Tour</a></li>
                                 <li><a class="dropdown-item" href="#">Delivery & Collection</a></li>
                             </ul>
                         </li>
@@ -101,6 +99,8 @@
                                 {% endif %}
                             </ul>
                         </li>
+                    </ul>
+                    <ul>
                         <li class="nav-item">
                             <a class="{% if grand_total %}text-info{% else %}text-black{% endif %} nav-link" href="">
                                 <div class="text-center shop-icon">
@@ -109,17 +109,17 @@
                                         {% if grand_total %}
                                             ${{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            $0.00
+                                            £0.00
                                         {% endif %}
                                     </p>
                                 </div>
                             </a>
                         </li>
                     </ul>
-                    <form method="GET" action="" class="d-flex " role="search">
-                        <input class="form-control me-2 home-search" type="search" name="q" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-sm btn-outline-secondary search-btn" type="submit">Search</button>
+                    <form method="GET" action="" class="d-flex home-search" role="search">
+                            <input class="form-control me-2 home-search" type="search" name="q" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-sm btn-outline-secondary search-btn" type="submit">Search</button>
                     </form>
                 </div>
             </div>
