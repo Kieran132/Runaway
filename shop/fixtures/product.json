@@ -1,0 +1,230 @@
+
+[{
+    "pk":1,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5001340155",
+       "name":"Runaway Pale Ale (330 ml)",
+       "description": "Our trademark Pale Ale - crisp, light and refreshing, but packed with flavour from citrusy US hops for a balanced, bitter finish. A modern day Mancunian classic. North West Regional Bottled Beer Competition 2022 - Bronze. alc.4.7 % by vol. 330 ml. Allergens: gluten from barley and wheat",
+       "price":2.75,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":2,
+    "model":"shop.product",
+    "fields":{
+       "sku": "pp5001600425",
+       "name": "India Pale Ale (330 ml)",
+       "description": "Our multi-award winning, flagship IPA - a take on a classic west coast IPA, balancing the tropical fruit aroma and assertive bitterness from resinous US hops, with burnt toffee and sweet caramels from quality British malts. Champion Bottled Beer of Britain 2022 - Silver. North West Regional Bottled Beer Competition 2022 - Gold. alc.5.5 % by vol. 330 ml. Allergens: gluten from barley and wheat. Vegan ",
+       "price": 2.85,
+       "category": 1,
+       "image": ""
+    }
+ },
+ {
+    "pk":3,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5001730010",
+       "name":"Runaway ESB (330 ml)",
+       "description":"British classic, jazzed up with specialty Belgian malts. Toffee and dark caramels are balanced beautifully with the aroma and flavours of rich dried fruits. A great cheese pairing. alc. 5.8% by vol. 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":2.75,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":4,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5001890157",
+       "name":"American Brown Ale (330 ml)",
+       "description":"Malt driven, but hoppy brown ale with caramel, burnt toffee & coffee notes, hints of pine and sweet, summer fruit on the nose. A complex bitter finish is provided by the big flavour of US hops. alc. 5.7% by vol. 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":2.85,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":5,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002111605",
+       "name":"Smoked Porter (330 ml)",
+       "description":"Rich, full bodied Porter with a subtle, sweet smoky aroma from beech smoked, rauchmalt from Bamberg, Germany. The roasted malt driven character is balanced by a spicy dark fruit aroma from a blend of UK and US hops. alc. 6.0% by vol. 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":2.85,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":6,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002260206",
+       "name":"Blend #2 - Bretted Farmhouse Ale (330 ml)",
+       "description":"Delicate and complex, this dry, funky & fruity blend of Burgundy wine barrel fermented, UK hopped saisons, was dry hopped with Styrian Wolf after blending, before being re-conditoning in bottle. Limited edition. alc. 5.5% by vol. 330 ml. Allergens: gluten from barley and wheat. Bottle conditioned",
+       "price":4,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":7,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002440521",
+       "name":"PA-35 Workshop Pale (330 ml)",
+       "description":"Limited Ed. Low strength, yet full bodied and boldly hopped hazy pale with Simcoe, Strata and Nelson Sauvin. Brewed in collaboration with our long time friends and neighbours Pop-Up Bikes as part of the Beernomicon CVLT of INDEPENDANCE project. One for some lubrication after a long day in the workshop. alc. 3.5% by vol. 330 ml. Allergens: gluten from barley and wheat. Vegan ",
+       "price":3.00,
+       "category":1,
+       "image":""
+    }
+ },
+ {
+    "pk":8,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002601115",
+       "name":"Brewer's Selection - Mixed case",
+       "description":"This is a mixed selection of some of our personal favourites, hand picked by the brewing team. Choice of x 12 or x 24 bottles/cans. All bottles/cans are 330ml .Please let us know if we need to account for allergens or specific dietary requirements by email - sales@therunawaybrewery.com",
+       "price":60.00,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":9,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002690715",
+       "name":"Runaway Pale Ale Case of 24",
+       "description":"Our trademark Pale Ale - crisp, light and refreshing, but packed with flavour from citrusy US hops for a balanced, bitter finish. A modern day Mancunian classic. North West Regional Bottled Beer Competition 2022 - Bronze. alc. 4.7% by vol. 24 x 330 ml. Allergens: gluten from barley and wheat",
+       "price":56.10,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":11,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002761055",
+       "name":"Runaway IPA Case of 24",
+       "description":"Our flagship, multi-award winning IPA - a take on a classic west coast IPA, balancing the tropical fruit aroma and assertive bitterness from resinous US hops, with burnt toffee and sweet caramels from quality British malts. Champion Bottled Beer of Britain 2022 - Silver. North West Regional Bottled Beer Competition 2022 - Gold . alc. 5.5% by vol. 24 x 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":58.14,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":12,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002820069",
+       "name":"Runaway ESB Case of 24",
+       "description":"British classic, jazzed up with specialty Belgian malts. Toffee and dark caramels are balanced beautifully with the aroma and flavours of rich dried fruits. A great cheese pairing. alc. 5.8% by vol. 24 x 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":56.10,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":13,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002820147",
+       "name":"Barrel Aged & Blended Case (4 x 750 ml)",
+       "description":"This mixed case includes a bottle of each of our latest barrel aged / blended releases and showcases the influence of oak, spirit barrels, wine must and/or local microflora on the flavour and character of our beer. This case includes one bottle of each of the following: - Tequila BA Tropical Stout: BA Oatmeal Export Stout- Rum BA Tropical Stout: BA Oatmeal Export Stout - Calder Valley Honey Stingo: Wine BA Biere de Miel - The Blackley Mosher: Wine BA Saison with Black Lime .All bottles are 750 ml",
+       "price":54.00,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":14,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002910572",
+       "name":"Smoked Porter Case of 24",
+       "description":"Rich, full bodied Porter with a subtle, sweet smoky aroma from beech smoked, rauchmalt from Bamberg, Germany. The roasted malt driven character is balanced by a spicy dark fruit aroma from a blend of UK and US hops. alc. 6.0% by vol. 24 x 330 ml. Allergens: gluten from barley and wheat. Vegan",
+       "price":58.14,
+       "category":2,
+       "image":""
+    }
+ },
+ {
+    "pk":15,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5002990740",
+       "name":"The Blackley Mosher - barrel aged Saison (750 ml)",
+       "description":"Named in honour of our pal (and tap room legend) Sofie to celebrate a big birthday, this wine BA version of our Winter Saison has been ageing in wine barrels for almost 10 months, before having black limes and Nelson Sauvin hops added at packaging for an intense hit of bright citrus. This is a super dry, tart and hoppy version of our classic saison, and proved a huge hit when it was launched in keg at the Independent Salford Beer Festival in late 2022. alc. 6.6% by vol. 750 ml. Allergens: gluten from barley and wheat. Bottle conditioned",
+       "price":15,
+       "category":3,
+       "image":""
+    }
+ },
+ {
+    "pk":16,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5003050248",
+       "name":"Calder Valley Honey Stingo (750 ml)",
+       "description":"A wine barrel aged version of our award winning Bier de Miel (honey saison) brewed with our friends from Brew Wild. This beer has spent much of 2022 sitting in our favourite wine barrels fermenting and developing further into a fabulous take on this classic Yorkshire style - which is apt, as the delicious raw honey used to brew it came from hives in the Calder Valley, around Halifax and Hebden Bridge, just 25 miles west of the brewery. alc. 7.5% by vol. 750 ml. Allergens: gluten from barley and wheat. Bottle conditioned",
+       "price":15.00,
+       "category":3,
+       "image":""
+    }
+ },
+ {
+    "pk":17,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5003070787",
+       "name":"Barrel Aged Tropical Stout (750 ml)",
+       "description":"Tequila BA - The tequila barrel has added a bright spirit character with a fruity freshness, contrasting with the rich chocolate from the original beer and soft vanilla notes from the oak barrels used to store it - reminiscent of a boozy chocolate truffle. alc. 8.0% by vol. 750 ml. Allergens: gluten from barley and wheat. Bottle conditioned",
+       "price":15.00,
+       "category":3,
+       "image":""
+    }
+ },
+ {
+    "pk":18,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5003090182",
+       "name":"Runaway T-Shirts",
+       "description":"Want to support the Brewery and look super-cool? Get your bad self a Runaway T-Shirt!",
+       "price":16.00,
+       "category":4,
+       "image":""
+    }
+ },
+ {
+    "pk":19,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5003090186",
+       "name":"Runaway Glassware",
+       "description":"- Conical Pint Glass (oversized, with pint & half pint markings) ",
+       "price":5.00,
+       "category":4,
+       "image":"opti-bw-1kg.jpg"
+    }
+ },
+ {
+    "pk":20,
+    "model":"shop.product",
+    "fields":{
+       "sku":"pp5003161326",
+       "name":"Runaway Gift Cards",
+       "description":"Want to book a Brewery Tour and Tasting for someone special but don't have a date in mind? Want to treat the beer lover in your life to their favourite Runaway brews? Get one of our Gift Cards!  Please note: Gift cards are only redeemable via our online shop and expire after 1 year.",
+       "price":10.00,
+       "category":5,
+       "image":""
+    }
+ }
+]

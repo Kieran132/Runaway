@@ -1,0 +1,42 @@
+[
+    {
+       "pk":1,
+       "model":"shop.category",
+       "fields":{
+          "name":"bottles",
+          "friendly_name":"Bottles"
+       }
+    },
+    {
+       "pk":2,
+       "model":"shop.category",
+       "fields":{
+          "name":"cases",
+          "friendly_name":"Cases"
+       }
+    },
+    {
+       "pk":3,
+       "model":"shop.category",
+       "fields":{
+          "name":"barrel_aged_and_blended",
+          "friendly_name":"Barrel Aged & Blended"
+       }
+    },
+    {
+        "pk":4,
+        "model":"shop.category",
+        "fields":{
+           "name":"merch",
+           "friendly_name":"Merch"
+        }
+     },
+     {
+        "pk":5,
+        "model":"shop.category",
+        "fields":{
+           "name":"gift_cards",
+           "friendly_name":"Gift Cards"
+        }
+     }
+ ]
