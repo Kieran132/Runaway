@@ -10,7 +10,7 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     padding-bottom: 60px;
-    color: azure;
+    color: black;
 }
 
 h1 {
@@ -32,8 +32,13 @@ h1 {
 }
 
 .home-nav {
-    background-color: #ffdb58;
+    background-color: white;
 }
+
+.navbar-toggler{
+    background-color: #07b3a3;
+}
+
 
 .home-search{
     margin-left: 60px;
@@ -50,6 +55,14 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.banner{
+    background-color: #FFDB58;
+}
+
+.banner p{
+    margin-top: 10px;
 }
 
 
@@ -77,9 +90,58 @@ h1 {
 
 .home-footer {
     padding-top: 10px;
-    background-color: #ffdb58;
+    background-color: white;
 }
 
 .copyright {
     color: #07b3a3;
+}
+
+/* Home page styling */
+
+.about-section{
+    padding-bottom: 10px;
+}
+
+.image-gallery .row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-gallery .col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.find-out-more {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* Adjust the height as needed */
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+.find-out-more .container {
+    padding: 20px;
+}
+
+.carousel-item img {
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: cover;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

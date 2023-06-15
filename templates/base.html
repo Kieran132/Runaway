@@ -49,11 +49,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav-item navbar-nav ml-auto">
+                    <ul class="nav-item navbar-nav w-auto mx-auto">
                         <li class="nav-item ">
                             <a class="nav-link home-nav-link" href="#">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown list-inline-item">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Shop
@@ -66,7 +66,7 @@
                                 <li><a class="dropdown-item" href="#">Gift Cards</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown list-inline-item">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 About
@@ -81,12 +81,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown list-inline-item">
+                            <a class="nav-link dropdown-toggle list-inline-item" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 My Account
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu border-0 dropdown-menu-end" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                 <a href="" class="dropdown-item">Product Management</a>
@@ -100,9 +100,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="{% if grand_total %}text-info{% else %}text-black{% endif %} nav-link" href="">
+                            <a href="">
                                 <div class="text-center shop-icon">
-                                    <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                                    <div><i class="fa fa-shopping-cart"></i></div>
                                 </div>
                             </a>
                         </li>
@@ -115,6 +115,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="banner text-black text-center py-1">
             <p>10% OFF BOTTLE ORDERS OVER £30 | 15% OFF WHOLE CASES</p>
         </div>
