@@ -108,10 +108,12 @@
                             </a>
                         </li>
                     </ul>
-                    <form method="GET" action="" class="d-flex home-search" role="search">
+                    <form method="GET" action="{% url 'products' %}" class="d-flex home-search" role="search">
+                        <div class="input-group w-100">
                             <input class="form-control me-2 home-search" type="search" name="q" placeholder="Search"
                                 aria-label="Search">
-                            <button class="btn btn-sm btn-outline-secondary search-btn" type="submit">Search</button>
+                            <button class=" form-control btn-sm btn-outline-secondary search-btn" type="submit">Search</button>
+                        </div>
                     </form>
                 </div>
             </div>
