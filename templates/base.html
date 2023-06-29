@@ -59,12 +59,12 @@
                                 Shop
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Bottles</a></li>
-                                <li><a class="dropdown-item" href="#">Cases</a></li>
-                                <li><a class="dropdown-item" href="#">Barrel Aged & Blended</a></li>
-                                <li><a class="dropdown-item" href="#">Merch</a></li>
-                                <li><a class="dropdown-item" href="#">Gift Cards</a></li>
-                                <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=bottles">Bottles</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=cases">Cases</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=barrel_aged_and_blended">Barrel Aged & Blended</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=merch">Merch</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=gift_cards">Gift Cards</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards">All Products</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown list-inline-item">
