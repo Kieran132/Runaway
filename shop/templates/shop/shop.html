@@ -10,6 +10,19 @@
         </div>
     </div>
     <div class="row">
+        <div class="col text-right mb-3">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="sort-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sort-dropdown">
+                    <li><a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">Name</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         {% for product in products%}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 border-0 custom-card">
