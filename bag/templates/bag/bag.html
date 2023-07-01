@@ -9,7 +9,7 @@
             <hr class="w-100 mb-4">
         </div>
     </div>
-    {% if products %}
+    {% if bag_items %}
     <div class="row">
         <div class="col">
             <table class="table table-striped">
@@ -23,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for item in products %}
+                    {% for item in bag_items %}
                     <tr>
                         <td>
                             <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid" style="max-height: 100px;">
@@ -31,7 +31,7 @@
                         </td>
                         <td>{{ item.quantity }}</td>
                         <td>£{{ item.product.price }}</td>
-                        <td>£{{ item.get_total }}</td>
+                        <td>£{{ item.product.price }}</td>
                         <td>
                             <a href="#" class="btn btn-outline-danger btn-sm">
                                 <i class="fas fa-trash"></i> Remove
@@ -45,7 +45,7 @@
     </div>
     <div class="row">
         <div class="col text-right">
-            <h4>Total: £{{ total }}</h4>
+            <h4>Total: £{{ total|floatformat:2 }}</h4>
         </div>
     </div>
     <div class="row">
