@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Your Shopping Bag</h2>
+            <hr class="w-100 mb-4">
+        </div>
+    </div>
+    {% if products %}
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in products %}
+                    <tr>
+                        <td>
+                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid" style="max-height: 100px;">
+                            <span>{{ item.product.name }}</span>
+                        </td>
+                        <td>{{ item.quantity }}</td>
+                        <td>£{{ item.product.price }}</td>
+                        <td>£{{ item.get_total }}</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-trash"></i> Remove
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <h4>Total: £{{ total }}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center mt-4">
+            <a href="#" class="btn btn-primary">Proceed to Checkout</a>
+        </div>
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col text-center mt-5">
+            <p>Your shopping bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-primary">Continue Shopping</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
