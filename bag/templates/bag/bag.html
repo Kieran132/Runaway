@@ -17,6 +17,7 @@
                     <tr>
                         <th>Product</th>
                         <th>Quantity</th>
+                        <th>Size</th>
                         <th>Price</th>
                         <th>Total</th>
                         <th></th>
@@ -29,7 +30,14 @@
                             <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid" style="max-height: 100px;">
                             <span>{{ item.product.name }}</span>
                         </td>
-                        <td>{{ item.quantity }}</td>
+                        <td>{% if item.product.has_sizes %} 
+                            {% for key, value in item.quantity.items_by_size.items %}
+                                {% if key == item.size %}
+                                    {{ value }}
+                                {% endif %}
+                            {% endfor %}    
+                        {% else %}{{ item.quantity }} {% endif %}</td>
+                        <td>{% if item.product.has_sizes %} {{ item.size|upper }} {% else %} N/A {% endif %}</td>
                         <td>£{{ item.product.price }}</td>
                         <td>£{{ item.product.price }}</td>
                         <td>
