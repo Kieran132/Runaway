@@ -121,21 +121,37 @@ h1 {
 }
 
 .find-out-more {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
     text-align: center;
+}
+.find-out-more .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     color: white;
-    padding-top: 10px;
-    opacity: 0.8;
 }
 
-.find-out-more .container {
-    padding: 20px;
+.find-out-more h4,
+.find-out-more p.home-about,
+.find-out-more a.btn {
+    margin: 10px 0;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../media/index/IMG_7808.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
 }
 
 .custom-image {
@@ -159,7 +175,7 @@ h1 {
 
 .home-about{
     margin-top: 50px;
-    color: black;
+    color: #07b3a3;
     opacity: 1;
 }
 
