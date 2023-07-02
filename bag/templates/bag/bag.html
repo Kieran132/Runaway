@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bag_tools %}
 
 {% block content %}
 <div class="container">
@@ -48,18 +49,18 @@
                                       </button>
                                     </div>
                                   </div>
-                                  <button type="submit" class="update-link text-info btn btn-outline-primary"><small>Update</small></button>
-                                  <a class="remove-item text-danger float-right btn btn-outline-danger" id="remove_{{ item.item_id }}"
-                                    data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                </div>
+                                  <a class="update-link text-info"><small>Update</small></a>
+                                  <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
+                                      data-product_size="{{ item.size }}"><small>Remove</small></a>
+                                  </div>
                                 {% if item.product.has_sizes %}
                                 <input type="hidden" name="product_size" value="{{ item.size }}">
                                 {% endif %}
-                              </form>                                                           
+                            </form>                                                           
                         </td>
                         <td>{% if item.product.has_sizes %} {{ item.size|upper }} {% else %} N/A {% endif %}</td>
                         <td>£{{ item.product.price }}</td>
-                        <td>£{{ item.product.price }}</td>
+                        <td>£{{ item.product.price | calc_subtotal:item.quantity }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -100,14 +101,19 @@
         form.submit();
     });
 
-    // Remove item and reload on click
+   // Remove item and reload on click
     $('.remove-item').click(function(e) {
-        e.preventDefault();
+        var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var form = $(this).closest('.update-form');
-        form.attr('action', `/bag/remove/${itemId}`);
-        form.submit();
-    });
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 
 

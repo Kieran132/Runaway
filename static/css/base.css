@@ -194,3 +194,10 @@ h1 {
 .shop-image{
     height: 25rem;
 }
+
+/* Shopping bag Styling */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
