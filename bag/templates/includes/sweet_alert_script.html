@@ -1,0 +1,33 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+
+<script type="text/javascript">
+  // Function to show success alert
+  {% if messages %}
+  {% for message in messages %}
+  {% if message.tags == 'success' and message.message == 'Product added successfully.' %}
+    Swal.fire({
+      icon: 'success',
+      title: 'Success',
+      text: '{{ message }}',
+      timer: 3000,
+    });
+    {% elif message.tags == 'success' and message.message == 'Product deleted successfully.' %}
+    Swal.fire({
+      icon: 'success',
+      title: 'Deleted',
+      text: '{{ message }}',
+      timer: 3000,
+    });
+    {% elif message.tags == 'success' and message.message == 'Product updated successfully.' %}
+    Swal.fire({
+        icon: 'success',
+        title: 'Updated',
+        text: '{{ message }}',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+</script>
