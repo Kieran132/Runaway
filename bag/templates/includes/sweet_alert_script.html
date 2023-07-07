@@ -18,7 +18,7 @@
       text: '{{ message }}',
       timer: 3000,
     });
-    {% elif message.tags == 'success' and message.message == 'Product updated successfully.' %}
+    {% elif message.tags == 'success' and message.message == 'Product updated successfully.'  %}
     Swal.fire({
         icon: 'success',
         title: 'Updated',
@@ -29,5 +29,4 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-
 </script>
