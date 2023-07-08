@@ -1,0 +1,70 @@
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+/* Adjust the width and margin of the form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    width: 50%;
+    margin-left: 20px;
+}
+
+/* Add padding and background color to the fieldset */
+fieldset {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Style the legend */
+legend {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #f5f5f5;
+}
+
+/* Style the delivery information save option */
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.ml-2 {
+    margin-left: 2px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
