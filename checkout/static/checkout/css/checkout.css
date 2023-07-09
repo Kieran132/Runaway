@@ -68,3 +68,56 @@ legend {
 .mr-0 {
     margin-right: 0;
 }
+
+/* Order details styles */
+.order-confirmation-wrapper {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.order-confirmation-wrapper small {
+    font-size: 12px;
+    color: #999;
+}
+
+.order-confirmation-wrapper p {
+    margin: 0;
+}
+
+.order-confirmation-wrapper .row {
+    margin-bottom: 10px;
+}
+
+.order-confirmation-wrapper .text-muted {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-confirmation-wrapper .text-black {
+    color: #333;
+}
+
+.order-confirmation-wrapper .font-weight-bold {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
