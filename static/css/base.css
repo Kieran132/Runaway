@@ -207,3 +207,51 @@ h1 {
     height: 400px;
     width: 100%;
 }
+
+
+.container-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #f3f3f3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .booking-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-btn {
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .booking-btn:hover {
+    background-color: #FFA000;
+  }
+  
+  .booking-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
