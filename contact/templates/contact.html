@@ -45,14 +45,21 @@
 
 <!-- Google Maps-->
 <script>
-    let map;
-  
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 53.431856, lng: -2.180836 },
-        zoom: 8,
-      });
-    }
+function initMap() {
+  const myLatLng = { lat: 53.431856, lng: -2.180836 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+
+window.initMap = initMap;
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs0nDsEZyzoI5O-EzBWU6n49cGHEIG4B8&callback=initMap" async defer></script>
   

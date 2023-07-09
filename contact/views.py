@@ -1,11 +1,6 @@
-from django.shortcuts import render, redirect, reverse
-from django.views import generic
+from django.shortcuts import render, redirect
 from .models import ContactForm
-from django.views.generic import View
 from django.core.mail import send_mail
-from django.http import HttpResponse
-from django.conf import settings
-from django.contrib import messages
 
 
 def contact(request):
@@ -22,9 +17,12 @@ def contact(request):
             'Contact Form Submission from {}'.format(name + ', ' + email),
             message,
             email,
-            ['kiemclean@hotmail.co.uk'],
+            ['kiemclean11@gmail.com'],
             fail_silently=False,
         )
+
+        print('working')
+
         messages.success(
             request,
             'Thank you for submitting! Someone will be in touch!')
