@@ -201,3 +201,9 @@ h1 {
 .remove-item {
     cursor: pointer;
 }
+
+/* Contact google maps */
+#map {
+    height: 400px;
+    width: 100%;
+}

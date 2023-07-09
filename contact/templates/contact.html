@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center mb-4">Contact Us</h1>
+<hr>
+<!-- Form for user to send contact message to enternal email-->
+<form method="POST" action="{% url 'contact' %}" id="contact-form">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-sm btn-outline-secondary" id="submit-btn">Send</button>
+</form>
+<hr>
+<h2>Find Us</h2>
+<div class="container">
+    <div id="map"></div>
+</div>
+<!-- Sweet Alert pop up message-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script>
+    {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'success' and message.message == 'Thank you for submitting! Someone will be in touch!' %}
+    Swal.fire({
+        icon: 'success',
+        title: 'Thank you!',
+        text: 'Thank you for submitting! Someone will be in touch!',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+</script>
+
+
+<!-- Google Maps-->
+<script>
+    let map;
+  
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 53.431856, lng: -2.180836 },
+        zoom: 8,
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs0nDsEZyzoI5O-EzBWU6n49cGHEIG4B8&callback=initMap" async defer></script>
+  
+
+{% endblock %}
