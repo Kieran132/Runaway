@@ -6,9 +6,16 @@
 {% load custom_filters %}
 
 {% load custom_filters %}
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h1>Booking</h1>
+            <hr class="w-100 mb-1">
+        </div>
+    </div>
+    <hr>
+</div>
 <div class="container-booking">
-    <h1>Booking</h1>
     <form class="form-container" method="POST" action="{% url 'booking' %}">
         {% csrf_token %}
         <div class="form-group">

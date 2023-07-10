@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Booking Successful</h1>
+    <p>Your appointment has been successfully booked.</p>
+    <p>Details:</p>
+    <ul>
+        <li><strong>Day:</strong> {{ appointment.day }}</li>
+        <li><strong>Time:</strong> {{ appointment.time }}</li>
+        <li><strong>Service:</strong> {{ appointment.service }}</li>
+    </ul>
+    <p>Thank you for choosing our services.</p>
+</div>
+{% endblock %}
