@@ -22,28 +22,31 @@ def booking(request):
     if request.method == 'POST':
         service = request.POST.get('service')
         day = request.POST.get('day')
+        time = request.POST.get('time')  # Retrieve the selected time from the form
+        
         if service == None:
             messages.success(request, "Please Select A Service!")
             return redirect('booking')
 
-        #Store day and service in django session:
+        # Store day, service, and time in the Django session
         request.session['day'] = day
         request.session['service'] = service
+        request.session['time'] = time
 
         appointment = Appointment.objects.create(
             service=service,
             day=day,
-            time="",
+            time=time,  # Save the selected time to the appointment model
         )
 
         return redirect('booking_success', appointment_id=appointment.id)
 
     return render(request, 'booking.html', {
-            'weekdays': weekdays,
-            'validateWeekdays': validateWeekdays,
-            'available_times': available_times,
-            'times': times,
-        })
+        'weekdays': weekdays,
+        'validateWeekdays': validateWeekdays,
+        'available_times': available_times,
+        'times': times,
+    })
 
 
 def bookingSubmit(request):
@@ -59,12 +62,14 @@ def bookingSubmit(request):
 
     day = request.session.get('day')
     service = request.session.get('service')
+    time = request.session.get('time')
 
     # Only show the time of the day that has not been selected before and the time he is editing:
     hour = checkTime(times, day)
     if request.method == 'POST':
-        time_str = request.POST.get("time")
-        time = datetime.strptime(time_str, '%I %p').time()  # Convert the string to time object
+        # Remove the following line as we're retrieving the time from the session instead
+        # time_str = request.POST.get("time")
+        # time = datetime.strptime(time_str, '%I %p').time()  # Convert the string to time object
 
         date = datetime.today().date()
 
@@ -72,7 +77,7 @@ def bookingSubmit(request):
             if day <= maxDate and day >= minDate:
                 if date.weekday() in [0, 3, 5]:  # Monday, Thursday, and Saturday have weekday values of 0, 3, and 5 respectively
                     if Appointment.objects.filter(day=day).count() < 11:
-                        if Appointment.objects.filter(day=day, time=time_str).count() < 1:
+                        if Appointment.objects.filter(day=day, time=time).count() < 1:
                             appointment = Appointment.objects.create(
                                 user=user,
                                 service=service,
