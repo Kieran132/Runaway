@@ -208,7 +208,7 @@ h1 {
     width: 100%;
 }
 
-/* Booking styliung  */
+/* Booking styling  */
 .container-booking {
     display: flex;
     justify-content: center;
@@ -255,3 +255,34 @@ h1 {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
+
+/* Delivery styling  */
+
+
+.brewery-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #07b3a3; /* Orange color */
+}
+
+.section-divider {
+    border: 1px solid #07b3a3; /* Orange color */
+}
+
+.delivery-info h3, .age-restriction h2, .click-collect h2 {
+    color: #07b3a3; /* Orange color */
+    margin-bottom: 10px;
+}
+
+.delivery-info p, .age-restriction p, .click-collect p {
+    margin-bottom: 15px;
+}
+
+.click-collect a {
+    color: #007bff; /* Blue color */
+}
+
+.click-collect a:hover {
+    text-decoration: underline;
+}
