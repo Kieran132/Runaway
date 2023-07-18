@@ -8,7 +8,7 @@
     </div>
 </section>
 
-<div class="jumbotron">
+<div class="jumbotron taproom-jumbotron">
     <p class="opening-hours">TAPROOM OPENING HOURS</p>
     <p> Thurs 1 - 10 pm | Friday & Saturday 1 - 10:30 pm</p>
     <p>Astley Street Stockport SK4 1AW</p>
@@ -61,15 +61,15 @@
                 delivery or click and collect:</p>
         </div>
         <div class="row">
-            <p>Home delivery: <a href="#" class="order-link">Order Online</a> and select home delivery as your preferred
+            <p>Home delivery: <a href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards"" class="order-link">Order Online</a> and select home delivery as your preferred
                 method</p>
-            <p>Click and collect: <a href="#" class="order-link">Order Online</a> and select to collect it from the
+            <p>Click and collect: <a href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards"" class="order-link">Order Online</a> and select to collect it from the
                 Brewery Bottle Shop free of charge.
                 Orders can be collected during business hours (Mon to Fri 10am-4pm). Please allow 24 hours between
                 placing your order and making collection, unless otherwise agreed with the brewery</p>
         </div>
         <div class="row">
-            <a href="#" class="delivery-link">Read more about our delivery and collection service here.</a>
+            <a href="{% url 'delivery' %}" class="delivery-link">Read more about our delivery and collection service here.</a>
         </div>
     </div>
 </section>

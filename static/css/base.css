@@ -268,8 +268,7 @@ h1 {
     border: 1px solid #07b3a3; 
 }
 
-.jumbotron {
-    background-color: #f6e58d; /* Yellow color */
+.taproom-jumbotron {
     padding: 20px;
     text-align: center;
 }
