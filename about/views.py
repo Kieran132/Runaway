@@ -175,6 +175,12 @@ def taproom(request):
 
 
 def delivery(request):
-    """ A view to return the taproom information page """
+    """ A view to return the delivery information page """
     
     return render(request, 'delivery_collection.html')
+
+
+def visit(request):
+    """ A view to return the visit information page """
+    
+    return render(request, 'visit.html')

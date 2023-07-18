@@ -6,4 +6,5 @@ urlpatterns = [
     path('booking_success/<int:appointment_id>/', views.booking_success, name='booking_success'),
     path('taproom/', views.taproom, name='taproom'),
     path('delivery/', views.delivery, name='delivery'),
+    path('visit/', views.visit, name='visit'),
 ]
