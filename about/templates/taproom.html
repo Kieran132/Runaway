@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <h1> Taproom, Beer Garden & Bottle Shop </h1>
+        <hr>
+    </div>
+</section>
+
+<div class="jumbotron">
+    <p>OPENING HOURS</p>
+    <p> Thurs 1 - 10 pm    |    Friday & Saturday 1 - 10:30 pm</p>
+    <p> Astley Street Stockport SK4 1AW </p>
+</div>
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <p>
+                    We love to share our passion for brewing and have built an informal Taproom and Beer Garden for you
+                    to enjoy our beer direct from the source.</p>
+                <p>Our tap room is designed to showcase our beer, with 10 lines of keg and 2 cask available each week,
+                    plus a wide range of bottled beer to drink in or take away. We also offer wine, independent cider
+                    and soft drinks from Steep Soda.</p>
+                <p>We are currently operating card only payments. Well behaved children and dogs (on a lead) are
+                    welcome in the Taproom and Beer Garden.</p>
+                <p>Our tap room is less than 10 minutes walk from Stockport Station (rail) and just a stones throw from
+                    the bus interchange. Stockport is easily accessible from central Manchester with regular train
+                    services from Piccadilly taking around 10 minutes.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid img-md" src="/media/taproom/taproom_info.jpg" alt="Brewery">
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Check out our <a href="#"> Plan Your Visit </a>  page for full details.
+            </p>
+            <p>
+                <a href=" {% url 'contact' %}"> FIND US </a>
+            </p>
+        </div>
+    </div>
+</section>
+<hr>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h3>RUNAWAY BREWERY BOTTLE SHOP</h3>
+        </div>
+        <div class="row">
+            <p> Open: Monday to Friday 10:00 - 16:00 </p>
+            <p> Street Stockport SK4 1AW </p>
+        </div>
+        <div class="row">
+            <p> We sell bottled beer to take away whenever the brewery is open. You can also order online for home delivery or click and collect:</p>
+        </div>
+        <div class="row">
+            <p>Home delivery: <a href="#"> Order Online </a> and select home delivery as your preferred method</p>
+            <p>Click and collect: <a href="#"> Order Online </a>  and select to collect it from the Brewery Bottle Shop free of charge.
+                Orders can be collected during business hours (Mon to Fri 10am-4pm). Please allow 24 hours between
+                placing your order and making collection, unless otherwise agreed with the brewery</p>
+        </div>
+        <div class="row">
+            <a href="#">Read more about our delivery and collection service here.</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

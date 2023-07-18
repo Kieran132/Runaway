@@ -166,3 +166,15 @@ def isWeekdayValid(x):
             if Appointment.objects.filter(day=j).count() < 10:
                 validateWeekdays.append(j)
     return validateWeekdays
+
+
+def taproom(request):
+    """ A view to return the taproom information page """
+    
+    return render(request, 'taproom.html')
+
+
+def delivery(request):
+    """ A view to return the taproom information page """
+    
+    return render(request, 'delivery_collection.html')
