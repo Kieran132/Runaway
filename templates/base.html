@@ -79,6 +79,7 @@
                                 <li><a class="dropdown-item" href="{% url 'visit' %}">Plan Your Visit</a></li>
                                 <li><a class="dropdown-item" href="{% url 'booking' %}">Book A Tour</a></li>
                                 <li><a class="dropdown-item" href="{% url 'delivery' %}">Delivery & Collection</a></li>
+                                <li><a class="dropdown-item" href="{% url 'trade' %}">Trade</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -95,6 +96,7 @@
                                 <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="" class="dropdown-item">My Profile</a>
+                                <a href="#" class="dropdown-item" >Wishlist</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>

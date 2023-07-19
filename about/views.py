@@ -184,3 +184,9 @@ def visit(request):
     """ A view to return the visit information page """
     
     return render(request, 'visit.html')
+
+
+def trade(request):
+    """ A view to return the trade information page """
+    
+    return render(request, 'trade.html')

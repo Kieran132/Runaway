@@ -100,7 +100,7 @@ h1 {
 /* Home page styling */
 
 .about-section{
-    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .image-gallery .row {
@@ -128,6 +128,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
 .find-out-more .container {
     background-color: rgba(0, 0, 0, 0.7);
@@ -158,8 +159,8 @@ h1 {
     width: 300px; 
     height: 300px; 
     object-fit: cover;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .image-container {
@@ -326,4 +327,60 @@ h1 {
 
 .click-collect a:hover {
     text-decoration: underline;
+}
+
+
+/* Trade Styling */
+
+.trade-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trade-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #07b3a3; /* Orange color */
+}
+
+.section-divider {
+    border: 1px solid #07b3a3; /* Orange color */
+}
+
+.trade-area-heading,
+.wholesale-distribution-heading {
+    font-size: 24px;
+    color: #07b3a3; /* Orange color */
+}
+
+.trade-portal-link,
+.eebria-trade-link {
+    color: #007bff; /* Blue color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.trade-portal-link:hover,
+.eebria-trade-link:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
+
+.trade-features {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.get-in-touch {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    margin-left: 20px;
+}
+
+.trusted-distributors {
+    list-style-type: circle;
+    margin-left: 20px;
 }
