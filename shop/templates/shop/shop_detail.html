@@ -63,6 +63,7 @@
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
                         <input type="submit" class="btn btn-outline-success rounded-0 text-uppercase mt-5" value="Add to Bag">
+                        <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-sm btn-outline-secondary"> Add to Wishlist</a>
                         {% if request.user.is_superuser %}
                         <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-secondary"> Edit Product</a>
                         <a href="{% url 'delete_product' product.id %}" class="btn btn-sm btn-outline-secondary"> Delete Product</a>
