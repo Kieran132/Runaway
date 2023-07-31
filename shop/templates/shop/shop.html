@@ -7,6 +7,9 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
             <hr class="w-100 mb-1">
+            {% if request.user.is_superuser %}
+            <a class="btn btn-sm btn-outline-secondary coffee-add-btn" href="{% url 'add_product'%}">Add</a>
+            {% endif %}
         </div>
     </div>
     <div class="row">
@@ -28,20 +31,16 @@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 border-0 custom-card">
                 {% if product.image %}
-                <a href="">
                     <img class="card-img-top img-fluid shop-image" src="{{ product.image.url }}"
                         alt="{{ product.name }}">
-                </a>
                 {% else %}
-                <a href="">
-                    <img class="card-img-top img-fluid shop-image" src="{{ product.image_url }}"
+                    <img class="card-img-top img-fluid shop-image" src="/media/index/IMG_7804.jpeg"
                         alt="{{ product.name }}">
-                </a>
                 {% endif %}
                 <div class="card-body pb-0">
                     <div class="card-title">{{ product.name }}</div>
                     <div>
-                        <a href="{% url 'shop_detail' product.id %}" class="btn btn-sm btn-outline-secondary">View
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-outline-secondary">View
                             Details</a>
                     </div>
                     <small class="text-muted">£{{ product.price }}</small>

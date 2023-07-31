@@ -6,13 +6,11 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             {% if product.image %}
-            <a href="">
-                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-            </a>
+                    <img class="card-img-top img-fluid shop-image" src="{{ product.image.url }}"
+                        alt="{{ product.name }}">
             {% else %}
-            <a href="">
-                <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
-            </a>
+                    <img class="card-img-top img-fluid shop-image" src="/media/index/IMG_7804.jpeg"
+                        alt="{{ product.name }}">
             {% endif %}
         </div>
         <div class="col-md-6">
@@ -65,6 +63,10 @@
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
                         <input type="submit" class="btn btn-outline-success rounded-0 text-uppercase mt-5" value="Add to Bag">
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-secondary"> Edit Product</a>
+                        <a href="{% url 'delete_product' product.id %}" class="btn btn-sm btn-outline-secondary"> Delete Product</a>
+                        {% endif %}
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     {% endwith %}
