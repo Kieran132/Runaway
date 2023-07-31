@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.template.loader import render_to_string
 from django.contrib.auth.decorators import login_required
 
-@login_required
+
 def booking(request):
     weekdays = validWeekday(22)
     validateWeekdays = isWeekdayValid(weekdays)
@@ -25,6 +25,10 @@ def booking(request):
         service = request.POST.get('service')
         day = request.POST.get('day')
         time = request.POST.get('time')  # Retrieve the selected time from the form
+
+        if not is_day_and_time_available(day, time):
+            messages.error(request, "The selected day and time are not available.")
+            return redirect('booking')
 
         if service == None:
             messages.success(request, "Please Select A Service!")
@@ -132,18 +136,28 @@ def booking_success(request, appointment_id):
         messages.error(request, "Invalid appointment ID")
         return redirect('booking')
 
-    # Send email confirmation
-    subject = 'Booking Confirmation'
-    message = render_to_string('email/booking_confirmation.html', {
-        'appointment': appointment,
-    })
-    email_from = settings.DEFAULT_FROM_EMAIL
-    recipient_list = [appointment.user.email]
-    send_mail(subject, message, email_from, recipient_list, html_message=message)
+    # Remove the booked day/time from the available times
+    day = appointment.day.strftime('%Y-%m-%d')
+    time = appointment.time
+    if day in available_times and time in available_times[day]:
+        available_times[day].remove(time)
 
     return render(request, 'booking_success.html', {
         'appointment': appointment,
     })
+
+def is_day_and_time_available(day, time):
+    # Check if the selected day and time are available
+    try:
+        appointment = Appointment.objects.get(day=day, time=time)
+    except Appointment.DoesNotExist:
+        return True
+
+    # If the appointment exists, check if it's in the past (already booked)
+    if appointment.day < timezone.now().date():
+        return True
+
+    return False
 
 
 def checkTime(times, day):
