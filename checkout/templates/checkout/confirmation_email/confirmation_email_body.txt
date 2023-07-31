@@ -1,0 +1,26 @@
+Dear {{ order.full_name }},
+
+Thank you for choosing Runaway Brewery! We're thrilled to confirm your recent order. Below, you'll find the details of your purchase:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Shipping Address:
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.country }}
+
+Phone Number: {{ order.phone_number }}
+
+If you have any queries or require assistance, don't hesitate to reach out to us at {{ contact_email }}.
+
+We value your business and hope you enjoy the delightful brews you've chosen. Your order is being processed and will soon be on its way to your doorstep.
+
+Thank you once again for choosing Runaway Brewery. We appreciate your patronage and look forward to serving you again soon!
+
+Cheers,
+The Runaway Brewery Team

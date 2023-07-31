@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import ContactForm
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.conf import settings
 
 
 def contact(request):
@@ -18,7 +19,7 @@ def contact(request):
             'Contact Form Submission from {}'.format(name + ', ' + email),
             message,
             email,
-            ['kiemclean11@gmail.com'],
+            settings.EMAIL_HOST_USER,
             fail_silently=False,
         )
 
