@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect
 from datetime import datetime, timedelta, time
 from django.core.mail import send_mail
+from django.conf import settings
 from .models import Appointment
 from django.contrib import messages
 from django.template.loader import render_to_string
+from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def booking(request):
     weekdays = validWeekday(22)
     validateWeekdays = isWeekdayValid(weekdays)
@@ -13,20 +15,23 @@ def booking(request):
     times = [
         "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM", "6:30 PM", "7 PM", "7:30 PM"
     ]
-    
+
     # Get the available time slots based on the selected day
     available_times = {}
     for weekday in validateWeekdays:
-        available_times[weekday] = checkTime(times, weekday)   
+        available_times[weekday] = checkTime(times, weekday)
 
     if request.method == 'POST':
         service = request.POST.get('service')
         day = request.POST.get('day')
         time = request.POST.get('time')  # Retrieve the selected time from the form
-        
+
         if service == None:
             messages.success(request, "Please Select A Service!")
             return redirect('booking')
+
+        # Get the current user
+        user = request.user
 
         # Store day, service, and time in the Django session
         request.session['day'] = day
@@ -34,12 +39,25 @@ def booking(request):
         request.session['time'] = time
 
         appointment = Appointment.objects.create(
+            user=user,
             service=service,
             day=day,
             time=time,  # Save the selected time to the appointment model
         )
 
-        return redirect('booking_success', appointment_id=appointment.id)
+        # Send email confirmation
+        subject = 'Booking Confirmation'
+        message = render_to_string('confirmation/booking_confirmation.txt', {
+            'appointment': appointment,
+        })
+        email_from = settings.DEFAULT_FROM_EMAIL
+        recipient_list = [user.email]
+        send_mail(subject, message, email_from, recipient_list)
+
+        return render(request, 'booking_success.html', {
+            'appointment': appointment,
+            'times': times,
+        })
 
     return render(request, 'booking.html', {
         'weekdays': weekdays,
@@ -64,12 +82,8 @@ def bookingSubmit(request):
     service = request.session.get('service')
     time = request.session.get('time')
 
-    # Only show the time of the day that has not been selected before and the time he is editing:
     hour = checkTime(times, day)
     if request.method == 'POST':
-        # Remove the following line as we're retrieving the time from the session instead
-        # time_str = request.POST.get("time")
-        # time = datetime.strptime(time_str, '%I %p').time()  # Convert the string to time object
 
         date = datetime.today().date()
 
@@ -111,23 +125,21 @@ def bookingSubmit(request):
     return redirect('booking')
 
 
-def send_email_confirmation(appointment):
-    # Customize the email subject and body based on your needs
-    subject = "Booking Confirmation"
-    message = f"Thank you for booking {appointment.service} on {appointment.day} at {appointment.time}."
-    from_email = "kiemclean@hotmail.co.uk"  # Update with your email address
-    to_email = appointment.email  # Update with the user's email address
-
-    # Send the email using Django's send_mail function
-    send_mail(subject, message, from_email, [to_email])
-
-
 def booking_success(request, appointment_id):
     try:
         appointment = Appointment.objects.get(id=appointment_id)
     except Appointment.DoesNotExist:
         messages.error(request, "Invalid appointment ID")
         return redirect('booking')
+
+    # Send email confirmation
+    subject = 'Booking Confirmation'
+    message = render_to_string('email/booking_confirmation.html', {
+        'appointment': appointment,
+    })
+    email_from = settings.DEFAULT_FROM_EMAIL
+    recipient_list = [appointment.user.email]
+    send_mail(subject, message, email_from, recipient_list, html_message=message)
 
     return render(request, 'booking_success.html', {
         'appointment': appointment,

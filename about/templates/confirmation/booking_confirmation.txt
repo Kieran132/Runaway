@@ -1,0 +1,8 @@
+Dear {{ appointment.user }},
+
+Thank you for booking a {{ appointment.service }} on {{ appointment.day }} at {{ appointment.time }}.
+
+We are looking forward to seeing you!
+
+Best regards,
+Your Booking Team
