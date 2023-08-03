@@ -18,12 +18,10 @@ def contact(request):
         send_mail(
             'Contact Form Submission from {}'.format(name + ', ' + email),
             message,
-            email,
+            [email],
             settings.EMAIL_HOST_USER,
             fail_silently=False,
         )
-
-        print('working')
 
         messages.success(
             request,
