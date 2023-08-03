@@ -8,6 +8,10 @@ from django.template.loader import render_to_string
 from django.contrib.auth.decorators import login_required
 
 
+from django.contrib.auth.decorators import login_required
+
+
+@login_required
 def booking(request):
     weekdays = validWeekday(22)
     validateWeekdays = isWeekdayValid(weekdays)
@@ -69,6 +73,7 @@ def booking(request):
         'available_times': available_times,
         'times': times,
     })
+
 
 
 def bookingSubmit(request):
