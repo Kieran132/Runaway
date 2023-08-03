@@ -1,0 +1,133 @@
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+/* Adjust the width and margin of the form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    width: 50%;
+    margin-left: 20px;
+}
+
+/* Add padding and background color to the fieldset */
+fieldset {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Style the legend */
+legend {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #f5f5f5;
+}
+
+/* Style the delivery information save option */
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.ml-2 {
+    margin-left: 2px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+/* Order details styles */
+.order-confirmation-wrapper {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.order-confirmation-wrapper small {
+    font-size: 12px;
+    color: #999;
+}
+
+.order-confirmation-wrapper p {
+    margin: 0;
+}
+
+.order-confirmation-wrapper .row {
+    margin-bottom: 10px;
+}
+
+.order-confirmation-wrapper .text-muted {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-confirmation-wrapper .text-black {
+    color: #333;
+}
+
+.order-confirmation-wrapper .font-weight-bold {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

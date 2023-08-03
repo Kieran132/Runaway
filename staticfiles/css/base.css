@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    padding-bottom: 60px;
+    color: black;
+}
+
+h1 {
+    font-family: Oswald, sans-serif;
+    color:black;
+}
+
+/* Allauth Form Styling */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #17a2b8; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #17a2b8;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #222;
+    background-color: #FFDB58;
+    border-color: #FFDB58;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* Header styling */
+
+.nav-item {
+    justify-content: space-between;
+    font-size: 16px;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #07b3a3;
+}
+
+.home-nav {
+    background-color: white;
+}
+
+.navbar-toggler{
+    background-color: #07b3a3;
+}
+
+
+.home-search{
+    margin-left: 60px;
+}
+
+.search-btn{
+    color: #07b3a3;
+}
+
+.shop-icon {
+    font-size: 16px;
+    color: #07b3a3;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner{
+    background-color: #FFDB58;
+}
+
+.banner p{
+    margin-top: 10px;
+}
+
+
+/* Footer Styling */
+
+.footer-container {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    letter-spacing: 60px;
+    font-size: 20px;
+}
+
+.footer-social li a {
+    color: #07b3a3;
+    ;
+}
+
+.home-footer {
+    padding-top: 10px;
+    background-color: white;
+}
+
+.copyright {
+    color: #07b3a3;
+}
+
+/* Home page styling */
+
+.about-section{
+    margin-bottom: 30px;
+}
+
+.image-gallery .row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-gallery .col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.find-out-more {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.find-out-more .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+}
+
+.find-out-more h4,
+.find-out-more p.home-about,
+.find-out-more a.btn {
+    margin: 10px 0;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../media/index/IMG_7808.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.custom-image {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+}
+
+.home-about{
+    margin-top: 50px;
+    color: #07b3a3;
+    opacity: 1;
+}
+
+/* Shop Styling */
+
+.custom-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.shop-image{
+    height: 25rem;
+}
+
+/* Shopping bag Styling */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* Contact google maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Booking styling  */
+.container-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .form-container {
+    background-color: #f3f3f3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .booking-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-btn {
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .booking-btn:hover {
+    background-color: #FFA000;
+  }
+  
+  .booking-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+/* Taproom styling */
+
+.taproom-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #07b3a3; 
+}
+
+.section-divider {
+    border: 1px solid #07b3a3; 
+}
+
+.taproom-jumbotron {
+    padding: 20px;
+    text-align: center;
+}
+
+.opening-hours {
+    font-size: 24px;
+    color: #07b3a3; 
+}
+
+.taproom-image {
+    border-radius: 5px;
+}
+
+.plan-link, .find-us-link, .order-link, .delivery-link {
+    color: #007bff; 
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.plan-link:hover, .find-us-link:hover, .order-link:hover, .delivery-link:hover {
+    color: #0056b3; 
+}
+
+.bottle-shop-heading {
+    color: #07b3a3;
+    margin-bottom: 15px;
+}
+
+
+/* Delivery styling  */
+
+
+.brewery-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #07b3a3;
+}
+
+.section-divider {
+    border: 1px solid #07b3a3;
+}
+
+.delivery-info h3, .age-restriction h2, .click-collect h2 {
+    color: #07b3a3; 
+    margin-bottom: 10px;
+}
+
+.delivery-info p, .age-restriction p, .click-collect p {
+    margin-bottom: 15px;
+}
+
+.click-collect a {
+    color: #007bff; 
+}
+
+.click-collect a:hover {
+    text-decoration: underline;
+}
+
+
+/* Trade Styling */
+
+.trade-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trade-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #07b3a3; /* Orange color */
+}
+
+.section-divider {
+    border: 1px solid #07b3a3; /* Orange color */
+}
+
+.trade-area-heading,
+.wholesale-distribution-heading {
+    font-size: 24px;
+    color: #07b3a3; /* Orange color */
+}
+
+.trade-portal-link,
+.eebria-trade-link {
+    color: #007bff; /* Blue color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.trade-portal-link:hover,
+.eebria-trade-link:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
+
+.trade-features {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.get-in-touch {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    margin-left: 20px;
+}
+
+.trusted-distributors {
+    list-style-type: circle;
+    margin-left: 20px;
+}
