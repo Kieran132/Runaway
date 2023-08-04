@@ -31,7 +31,7 @@
                               <img class="card-img-top img-fluid shop-image" src="{{ product.image.url }}"
                                    alt="{{ product.name }}">
                             {% else %}
-                              <img class="card-img-top img-fluid shop-image" src="/media/index/IMG_7804.jpeg"
+                              <img class="card-img-top img-fluid shop-image" src="{% static 'images/IMG_7804' %}"
                                   alt="{{ product.name }}">
                             {% endif %}
                             <span>{{ item.product.name }}</span>
