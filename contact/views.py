@@ -15,11 +15,13 @@ def contact(request):
         email = request.POST['email']
         message = request.POST['message']
 
+        email_from = settings.DEFAULT_FROM_EMAIL
+
         send_mail(
             'Contact Form Submission from {}'.format(name + ', ' + email),
             message,
-            [email],
-            settings.EMAIL_HOST_USER,
+            email,
+            ['runawayci23@gmail.com'],
             fail_silently=False,
         )
 
