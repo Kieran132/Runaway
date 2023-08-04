@@ -28,11 +28,11 @@
                     <tr>
                         <td>
                             {% if product.image %}
-                              <img class="card-img-top img-fluid shop-image" src="{{ product.image.url }}"
-                                   alt="{{ product.name }}">
+                              <img class="card-img-top img-fluid shop-image" src="{{ item.product.image.url }}"
+                                   alt="{{ item.product.name }}">
                             {% else %}
                               <img class="card-img-top img-fluid shop-image" src="{% static 'images/IMG_7804' %}"
-                                  alt="{{ product.name }}">
+                                  alt="{{ item.product.name }}">
                             {% endif %}
                             <span>{{ item.product.name }}</span>
                         </td>
