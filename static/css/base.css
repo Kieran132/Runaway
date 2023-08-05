@@ -252,10 +252,84 @@ h1 {
 
 /* Shopping bag Styling */
 
-.update-link,
-.remove-item {
-    cursor: pointer;
+/* Unique styles for the shopping basket */
+  
+.shopping-basket-table {
+width: 100%;
+border-collapse: collapse;
 }
+
+.shopping-basket-table th,
+.shopping-basket-table td {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.shop-image {
+width: 130px;
+height: 130px;
+object-fit: cover;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.product-name {
+font-size: 16px;
+font-weight: bold;
+}
+
+.quantity-input-group {
+display: flex;
+align-items: center;
+}
+
+.quantity-input {
+width: 50px;
+text-align: center;
+}
+
+.decrease-quantity,
+.increase-quantity {
+background-color: #f8f9fa;
+border: none;
+cursor: pointer;
+}
+
+.update-link {
+margin-right: 10px;
+color: #007bff;
+cursor: pointer;
+}
+
+.remove-item {
+color: #dc3545;
+cursor: pointer;
+}
+
+.total-price {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+}
+
+.proceed-to-checkout-btn,
+.continue-shopping-btn {
+padding: 10px 20px;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.proceed-to-checkout-btn:hover,
+.continue-shopping-btn:hover {
+background-color: #0056b3;
+}
+  
 
 /* Contact google maps */
 #map {

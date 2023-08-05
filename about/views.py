@@ -75,7 +75,6 @@ def booking(request):
     })
 
 
-
 def bookingSubmit(request):
     user = request.user
     times = [
@@ -150,6 +149,7 @@ def booking_success(request, appointment_id):
     return render(request, 'booking_success.html', {
         'appointment': appointment,
     })
+
 
 def is_day_and_time_available(day, time):
     # Check if the selected day and time are available
