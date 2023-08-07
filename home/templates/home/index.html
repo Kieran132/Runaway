@@ -7,10 +7,10 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container-sm">
             <div class="image-container">
-                <img src="{% static 'images/runaway_event.png' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/IMG_7805.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/shandy_runaway.png' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/IMG_7804.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
+                <img src="{% static 'images/runaway_event.png' %}" class="d-block img-fluid custom-image custom-image-280" alt="...">
+                <img src="{% static 'images/IMG_7805.jpeg' %}" class="d-block img-fluid custom-image custom-image-280" alt="...">
+                <img src="{% static 'images/shandy_runaway.png' %}" class="d-block img-fluid custom-image custom-image-280" alt="...">
+                <img src="{% static 'images/IMG_7804.jpeg' %}" class="d-block img-fluid custom-image custom-image-280" alt="...">
             </div>
         </div>
     </div>
@@ -45,22 +45,20 @@
 
             All of our beers are unfiltered and unpasteurised, with the majority naturally conditioned by yeast in keg
             and bottle</p>
-        <a href="#" class="btn btn-primary">FIND US IN STOCKPORT</a>
+        <a href="{% url 'taproom' %}" class="btn stnd-btn">FIND US IN STOCKPORT</a>
     </div>
 </section>
 
 <section class="image-gallery">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="{% static 'images/IMG_7806.jpeg' %}" alt="Image 1">
-            </div>
-            <div class="col-md-4">
-                <img src="{%  static 'images/IMG_7808.jpeg' %}" alt="Image 2">
-            </div>
-            <div class="col-md-4">
-                <img src="{% static 'images/IMG_7807.jpeg' %}" alt="Image 3">
-            </div>
+    <div class="image-container-btm">
+        <div class="d-block img-fluid">
+            <img src="{% static 'images/IMG_7806.jpeg' %}" alt="Image 1">
+        </div>
+        <div class="d-block img-fluid">
+            <img src="{%  static 'images/IMG_7808.jpeg' %}" alt="Image 2">
+        </div>
+        <div class="d-block img-fluid">
+            <img src="{% static 'images/IMG_7807.jpeg' %}" alt="Image 3">
         </div>
     </div>
 </section>
