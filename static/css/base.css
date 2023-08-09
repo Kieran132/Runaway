@@ -13,9 +13,9 @@ body {
     color: black;
 }
 
-h1 {
+h1, h2, hr {
     font-family: Oswald, sans-serif;
-    color:black;
+    color:#07b3a3;
 }
 
 .stnd-btn {
@@ -26,6 +26,7 @@ h1 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .stnd-btn:hover{
@@ -36,12 +37,12 @@ h1 {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #17a2b8; /* text-secondary */
+    color: #07b3a3; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #17a2b8;
-    border-radius: 0;
+    border: 2px solid #07b3a3;
+    margin-bottom: 10px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -75,15 +76,18 @@ h1 {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: white;
-    background-color: #FFDB58;
-    border-color: #FFDB58;
+    background-color: #FFC107;
+    border-color: #FFC107;
 }
 
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+.allauth-form-inner-content button:hover{
+    background-color: #c1541f;
+}
+
+.login-home-btn{
+    margin-right: 10px;
 }
 
 /* Header styling */
@@ -141,7 +145,7 @@ h1 {
 }
 
 .banner{
-    background-color: #FFDB58;
+    background-color: #FFC107;
 }
 
 .banner p{
@@ -270,6 +274,35 @@ h1 {
     height: 25rem;
 }
 
+/* Add Product Styling */
+
+.form .control-group .controls .textarea,
+.form .control-group .controls .textInput,
+.form .control-group .controls .numberinput,
+.form .control-group .controls .urlinput,
+.form .control-group .controls .select,
+.form .control-group .controls .nullbooleanselect{
+    border: 2px solid #07b3a3 !important;
+}
+
+.text-right a,
+.text-right button{
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.text-right a:hover,
+.text-right button:hover{
+    background-color: #c1541f;
+}
+
 /* Shopping bag Styling */
 
 /* Unique styles for the shopping basket */
@@ -352,9 +385,28 @@ background-color: #c1541f;
   
 
 /* Contact google maps */
+
 #map {
     height: 400px;
     width: 100%;
+    padding-bottom: 30px;
+}
+
+.map-container{
+    padding-bottom: 20px;
+}
+
+.contact-form{
+    padding: 20px;
+}
+
+.form-group-contact{
+    margin-bottom: 10px;
+}
+
+.find-us{
+    display: flex;
+    justify-content: center;
 }
 
 /* Booking styling  */
@@ -570,6 +622,23 @@ background-color: #c1541f;
         justify-content: space-evenly;
         letter-spacing: 30px;
     }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking Styling */
+
+    .container-booking{
+        width: 16rem;
+        padding-left: 29px;
+    }
+
+    .form-group-booking{
+        width: 10rem;
+    }
 }
 
 /* Styling for screen sizes from 380px */
@@ -608,13 +677,25 @@ background-color: #c1541f;
         letter-spacing: 40px;
         font-size: 13px;
     }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
 }
 
 /* Screen sizes from 420px */
 
 @media only screen and (min-width: 420px) and (max-width: 540px){
 
-    /* Home page styling */
+    /* Index.html styling */
 
     .image-container{
         flex-wrap: wrap;
@@ -638,11 +719,31 @@ background-color: #c1541f;
         font-size: 12px;
         justify-content: center;
     }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+    
+    .container-booking{
+        margin-bottom: 40px;
+    }
 }
 
 /* Screen sizes from 541px */
 
 @media only screen and (min-width:541px) and (max-width:819px){
+
+    /* Index.html styling */
 
     .image-container{
         flex-wrap: wrap;
@@ -678,11 +779,25 @@ background-color: #c1541f;
         font-size: 13px;
     }
 
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+
 }
 
 /* Screen sizes from to 820px */
 
 @media only screen and (min-width: 820px) and (max-width: 991px) {
+
+    /* Index.html styling */
 
     .image-container{
         flex-wrap: wrap;
@@ -719,11 +834,19 @@ background-color: #c1541f;
         justify-content: space-evenly;
         font-size: 13px;
     }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
 }
 
 /* Screen sizes from 992px to 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    /* Index.html styling */
 
     .image-container{
         flex-wrap: wrap;

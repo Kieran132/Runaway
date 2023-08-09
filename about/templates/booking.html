@@ -18,14 +18,14 @@
 <div class="container-booking">
     <form class="form-container" method="POST" action="{% url 'booking' %}">
         {% csrf_token %}
-        <div class="form-group">
+        <div class="form-group-booking">
             <label class="booking-label" for="service">Service:</label>
             <select class="booking-select" name="service" id="service">
                 <option value="" selected disabled>Select a service</option>
                 <option value="Brewery Tour">Brewery Tour</option>
             </select>
         </div>
-        <div class="form-group">
+        <div class="form-group-booking">
             <label class="booking-label" for="day">Day:</label>
             <select class="booking-select" name="day" id="day">
                 {% for weekday in validateWeekdays %}
@@ -33,7 +33,7 @@
                 {% endfor %}
             </select>
         </div>
-        <div class="form-group">
+        <div class="form-group-booking">
             <label class="booking-label" for="time">Time:</label>
             <select class="booking-select" name="time" id="time" disabled>
                 {% if day %}
