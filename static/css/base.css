@@ -382,6 +382,23 @@ transition: background-color 0.3s ease;
 .continue-shopping-btn:hover {
 background-color: #c1541f;
 }
+
+/* Profile Page styling */
+
+.profile-update-form input,
+.profile-update-form .control-group .controls .lazyselect{
+    border: 2px solid #07b3a3 !important;
+    margin-bottom: 10px;
+}
+
+.order-history-container{
+    margin-top: 20px;
+}
+
+.order-history table thead,
+.order-history table tbody tr{
+    border: 2px solid #07b3a3;
+}
   
 
 /* Contact google maps */
