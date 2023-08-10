@@ -422,8 +422,16 @@ background-color: #c1541f;
 
 /* Checkout Page Styling */
 
-.input[type="checkbox"]{
+.checkout-tick:checked{
     width: 7%;
+    background-color: #FFC107;
+    color: #fff;
+    border-color: #FFC107;
+}
+
+.form-check-input[type=checkbox]{
+    width: 7% !important;
+
 }
 
 /* Wishlish Page Styling */
