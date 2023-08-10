@@ -4,14 +4,7 @@
   // Function to show success alert
   {% if messages %}
   {% for message in messages %}
-  {% if message.tags == 'success' and message.message == 'Product added successfully.' %}
-    Swal.fire({
-      icon: 'success',
-      title: 'Success',
-      text: '{{ message }}',
-      timer: 3000,
-    });
-    {% elif message.tags == 'success' and message.message == 'Product deleted successfully.' %}
+    {% if message.tags == 'success' and message.message == 'Product deleted successfully.' %}
     Swal.fire({
       icon: 'success',
       title: 'Deleted',

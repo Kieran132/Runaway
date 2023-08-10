@@ -342,6 +342,41 @@ h1, h2, hr {
 
 /* Shopping bag Styling */
 
+/* Basket pop up styling */
+
+/* Styles for the pop-up container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4444;
+    z-index: 1000;
+}
+
+/* Styles for the pop-up content */
+.popup-content {
+    background-color: #f4f1de;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the close button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 /* Unique styles for the shopping basket */
   
 .shopping-basket-table {
