@@ -28,13 +28,13 @@
                     <tr>
                         <td>
                             {% if item.product.image %}
-                              <img class="card-img-top img-fluid shop-image" src="{{ item.product.image.url }}"
+                              <img class="card-img-top img-fluid bag-shop-image" src="{{ item.product.image.url }}"
                                    alt="{{ item.product.name }}">
                             {% else %}
-                              <img class="card-img-top img-fluid shop-image" src="{% static 'images/IMG_7804' %}"
+                              <img class="card-img-top img-fluid bag-shop-image" src="{% static 'images/IMG_7804' %}"
                                   alt="{{ item.product.name }}">
                             {% endif %}
-                            <span class="product-name">{{ item.product.name }}</span>
+                            <span class="bag-product-name">{{ item.product.name }}</span>
                         </td>
                         <td class="py-3 w-25">
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">

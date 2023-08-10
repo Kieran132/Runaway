@@ -8,15 +8,15 @@
             <h2 class="logo-font">Wishlist</h2>
             <hr class="w-100 mb-1">
     </div>
-    <div class="row">
+    <div class="row wish-row">
         {% for item in wishlist%}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            <div class="card h-100 border-0 custom-card">
+        <div class="col-md-4 wish-custom-card">
+            <div class="card mb-4 box-shadow wish-box">
                 {% if item.product.image %}
-                    <img class="card-img-top img-fluid shop-image" src="{{ item.product.image.url }}"
+                    <img class="card-img-top img-fluid wish-shop-image" src="{{ item.product.image.url }}"
                         alt="{{ item.product.name }}">
                 {% else %}
-                    <img class="card-img-top img-fluid shop-image" src="/media/index/IMG_7804.jpeg"
+                    <img class="card-img-top img-fluid wish-shop-image" src="/media/index/IMG_7804.jpeg"
                         alt="{{ item.product.name }}">
                 {% endif %}
                 <div class="card-body pb-0">
@@ -24,7 +24,7 @@
 
                     <small class="text-muted">£{{ item.product.price }}</small>
                 </div>
-                <a href="{% url 'delete_wishlist_product' product_id=item.product.id %}" class="btn btn-sm btn-outline-secondary">Delete Product</a>
+                <a href="{% url 'delete_wishlist_product' product_id=item.product.id %}" class="btn btn-sm btn-outline-secondary wish-delete-btn stnd-btn">Delete Product</a>
             </div>
         </div>
         {% endfor %}

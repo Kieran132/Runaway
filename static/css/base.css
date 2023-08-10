@@ -289,6 +289,27 @@ h1, h2, hr {
     height: 25rem;
 }
 
+.shop-view-details-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Shop Detail Page */
+
+.shop-image-detail{
+    height: 30rem;
+}
+
+.detail-btn{
+    margin-top: 10px;
+}
+
 
 /* Add Product Styling */
 
@@ -334,22 +355,22 @@ padding: 10px;
 border-bottom: 1px solid #ddd;
 }
 
-.shop-image {
-width: 100%;
-height: auto;
+.bag-shop-image {
+height: 10rem;
+width: auto;
 object-fit: cover;
 border-radius: 5px;
 margin-right: 10px;
 }
 
-.product-name {
-font-size: 16px;
-font-weight: bold;
+.bag-product-name{
+    font-size: 12px;
 }
 
 .quantity-input-group {
-display: flex;
-align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .quantity-input {
@@ -397,6 +418,51 @@ transition: background-color 0.3s ease;
 .proceed-to-checkout-btn:hover,
 .continue-shopping-btn:hover {
 background-color: #c1541f;
+}
+
+/* Checkout Page Styling */
+
+.input[type="checkbox"]{
+    width: 7%;
+}
+
+/* Wishlish Page Styling */
+
+.wish-box{
+    height: 100%;
+    margin-top: 10px;
+}
+
+.wish-custom-card {
+    border: none;
+    height: auto;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.card.wish-custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wish-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.wish-shop-image{
+    height: 20rem;
+    width: 12rem;
+}
+
+.wish-delete-btn{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Profile Page styling */

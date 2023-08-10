@@ -41,9 +41,9 @@
                         <div class="card-title">{{ product.name }}</div>
                         <div>
                             <a href="{% url 'product_detail' product.id %}"
-                                class="btn btn-sm btn-outline-secondary">View Details</a>
+                                class="btn btn-sm btn-outline-secondary stnd-btn shop-view-details-btn">View Details</a>
                         </div>
-                        <small class="text-muted">£{{ product.price }}</small>
+                        <small class="text-muted shop-price">£{{ product.price }}</small>
                     </div>
                 </div>
             </div>
