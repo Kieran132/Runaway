@@ -260,19 +260,35 @@ h1, h2, hr {
 
 /* Shop Styling */
 
-.custom-card {
-    width: 100%;
+.shop-box{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.shop-image{
+.custom-card {
+    border: none;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.row.shop-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-shop-image{
     height: 25rem;
 }
+
 
 /* Add Product Styling */
 

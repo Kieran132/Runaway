@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
@@ -26,27 +26,27 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        {% for product in products%}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            <div class="card h-100 border-0 custom-card">
-                {% if product.image %}
-                    <img class="card-img-top img-fluid shop-image" src="{{ product.image.url }}"
-                        alt="{{ product.name }}">
-                {% else %}
-                    <img class="card-img-top img-fluid shop-image" src="{% static 'images/IMG_7804' %}"
-                        alt="{{ product.name }}">
-                {% endif %}
-                <div class="card-body pb-0">
-                    <div class="card-title">{{ product.name }}</div>
-                    <div>
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-outline-secondary">View
-                            Details</a>
+    <div class="row shop-row">
+        {% for product in products %}
+            <div class="col-md-4 custom-card">
+                <div class="card mb-4 box-shadow shop-box">
+                    {% if product.image %}
+                        <img class="card-img-top img-fluid main-shop-image" src="{{ product.image.url }}"
+                            alt="{{ product.name }}">
+                    {% else %}
+                        <img class="card-img-top img-fluid main-shop-image" src="{% static 'images/IMG_7804' %}"
+                            alt="{{ product.name }}">
+                    {% endif %}
+                    <div class="card-body pb-0">
+                        <div class="card-title">{{ product.name }}</div>
+                        <div>
+                            <a href="{% url 'product_detail' product.id %}"
+                                class="btn btn-sm btn-outline-secondary">View Details</a>
+                        </div>
+                        <small class="text-muted">£{{ product.price }}</small>
                     </div>
-                    <small class="text-muted">£{{ product.price }}</small>
                 </div>
             </div>
-        </div>
         {% endfor %}
     </div>
 </div>
