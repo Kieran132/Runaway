@@ -13,21 +13,36 @@ body {
     color: black;
 }
 
-h1 {
+h1, h2, hr {
     font-family: Oswald, sans-serif;
-    color:black;
+    color:#07b3a3;
+}
+
+.stnd-btn {
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.stnd-btn:hover{
+    background-color: #c1541f;
 }
 
 /* Allauth Form Styling */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #17a2b8; /* text-secondary */
+    color: #07b3a3; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #17a2b8;
-    border-radius: 0;
+    border: 2px solid #07b3a3;
+    margin-bottom: 10px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -50,8 +65,8 @@ h1 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #17a2b8;
-    border: 1px solid #17a2b8;
+    background-color: #FFC107;
+    border: 1px solid #FFC107;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -61,15 +76,18 @@ h1 {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #222;
-    background-color: #FFDB58;
-    border-color: #FFDB58;
+	color: white;
+    background-color: #FFC107;
+    border-color: #FFC107;
 }
 
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+.allauth-form-inner-content button:hover{
+    background-color: #c1541f;
+}
+
+.login-home-btn{
+    margin-right: 10px;
 }
 
 /* Header styling */
@@ -95,11 +113,26 @@ h1 {
 
 
 .home-search{
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 .search-btn{
-    color: #07b3a3;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover{
+    background-color: #c1541f;
+}
+
+.search-bar{
+    width: 200%;
 }
 
 .shop-icon {
@@ -112,7 +145,7 @@ h1 {
 }
 
 .banner{
-    background-color: #FFDB58;
+    background-color: #FFC107;
 }
 
 .banner p{
@@ -143,12 +176,13 @@ h1 {
 }
 
 .home-footer {
-    padding-top: 10px;
+    margin-top: 10px;
     background-color: white;
 }
 
 .copyright {
     color: #07b3a3;
+    padding-left: 30px;
 }
 
 /* Home page styling */
@@ -157,21 +191,16 @@ h1 {
     margin-bottom: 30px;
 }
 
-.image-gallery .row {
+.image-container-btm{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.image-gallery .col-md-4 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 10px;
-}
-
-.image-gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.image-gallery img{
+    width: 400px;
+    height: 400px;
+    padding-bottom: 10px;
 }
 
 .find-out-more {
@@ -202,7 +231,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../media/index/IMG_7808.jpeg);
+    background-image: url(/static/images/IMG_7808.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -222,11 +251,6 @@ h1 {
     justify-content: space-between;
 }
 
-.image-gallery img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; 
-}
 
 .home-about{
     margin-top: 50px;
@@ -236,31 +260,295 @@ h1 {
 
 /* Shop Styling */
 
-.custom-card {
-    width: 100%;
+.shop-box{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.shop-image{
+.custom-card {
+    border: none;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.row.shop-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-shop-image{
     height: 25rem;
+}
+
+.shop-view-details-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Shop Detail Page */
+
+.shop-image-detail{
+    height: 30rem;
+}
+
+.detail-btn{
+    margin-top: 10px;
+}
+
+
+/* Add Product Styling */
+
+.form .control-group .controls .textarea,
+.form .control-group .controls .textInput,
+.form .control-group .controls .numberinput,
+.form .control-group .controls .urlinput,
+.form .control-group .controls .select,
+.form .control-group .controls .nullbooleanselect{
+    border: 2px solid #07b3a3 !important;
+}
+
+.text-right a,
+.text-right button{
+    background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.text-right a:hover,
+.text-right button:hover{
+    background-color: #c1541f;
 }
 
 /* Shopping bag Styling */
 
-.update-link,
-.remove-item {
+/* Basket pop up styling */
+
+/* Styles for the pop-up container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4444;
+    z-index: 1000;
+}
+
+/* Styles for the pop-up content */
+.popup-content {
+    background-color: #f4f1de;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the close button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
     cursor: pointer;
 }
 
+/* Unique styles for the shopping basket */
+  
+.shopping-basket-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.shopping-basket-table th,
+.shopping-basket-table td {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.bag-shop-image {
+height: 10rem;
+width: auto;
+object-fit: cover;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.bag-product-name{
+    font-size: 12px;
+}
+
+.quantity-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quantity-input {
+width: 50px;
+text-align: center;
+}
+
+.decrease-quantity,
+.increase-quantity {
+background-color: #f8f9fa;
+border: none;
+cursor: pointer;
+}
+
+.update-link {
+margin-right: 10px;
+color: #c1541f;
+cursor: pointer;
+}
+
+.remove-item {
+color: #dc3545;
+cursor: pointer;
+}
+
+.total-price {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+}
+
+.proceed-to-checkout-btn,
+.continue-shopping-btn {
+padding: 10px 20px;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+background-color: #FFC107;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.proceed-to-checkout-btn:hover,
+.continue-shopping-btn:hover {
+background-color: #c1541f;
+}
+
+/* Checkout Page Styling */
+
+.checkout-tick:checked{
+    width: 7%;
+    background-color: #FFC107;
+    color: #fff;
+    border-color: #FFC107;
+}
+
+.form-check-input[type=checkbox]{
+    width: 7% !important;
+
+}
+
+/* Wishlish Page Styling */
+
+.wish-box{
+    height: 100%;
+    margin-top: 10px;
+}
+
+.wish-custom-card {
+    border: none;
+    height: auto;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.card.wish-custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wish-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.wish-shop-image{
+    height: 20rem;
+    width: 12rem;
+}
+
+.wish-delete-btn{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Profile Page styling */
+
+.profile-update-form input,
+.profile-update-form .control-group .controls .lazyselect{
+    border: 2px solid #07b3a3 !important;
+    margin-bottom: 10px;
+}
+
+.order-history-container{
+    margin-top: 20px;
+}
+
+.order-history table thead,
+.order-history table tbody tr{
+    border: 2px solid #07b3a3;
+}
+  
+
 /* Contact google maps */
+
 #map {
     height: 400px;
     width: 100%;
+    padding-bottom: 30px;
+}
+
+.map-container{
+    padding-bottom: 20px;
+}
+
+.contact-form{
+    padding: 20px;
+}
+
+.form-group-contact{
+    margin-bottom: 10px;
+}
+
+.find-us{
+    display: flex;
+    justify-content: center;
 }
 
 /* Booking styling  */
@@ -303,11 +591,11 @@ h1 {
   }
   
   .booking-btn:hover {
-    background-color: #FFA000;
+    background-color: #c1541f;
   }
   
   .booking-btn:disabled {
-    background-color: #ccc;
+    background-color: #c1541f;
     cursor: not-allowed;
   }
 
@@ -338,13 +626,13 @@ h1 {
 }
 
 .plan-link, .find-us-link, .order-link, .delivery-link {
-    color: #007bff; 
+    color: #c1541f; 
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .plan-link:hover, .find-us-link:hover, .order-link:hover, .delivery-link:hover {
-    color: #0056b3; 
+    color: #c1541f; 
 }
 
 .bottle-shop-heading {
@@ -439,4 +727,291 @@ h1 {
     margin-left: 20px;
 }
 
+/* Styling for screen sizes from 280px */
 
+@media only screen and (min-width: 280px) and (max-width: 379px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+    .image-gallery img{
+        width: 137px;
+        height: 137px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 8px;
+        justify-content: space-evenly;
+    }
+
+    .footer-social{
+        font-size: 13px;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 30px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking Styling */
+
+    .container-booking{
+        width: 16rem;
+        padding-left: 29px;
+    }
+
+    .form-group-booking{
+        width: 10rem;
+    }
+}
+
+/* Styling for screen sizes from 380px */
+@media only screen and (min-width: 380px) and (max-width: 419px) {
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .image-gallery img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .footer-social {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 40px;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 420px */
+
+@media only screen and (min-width: 420px) and (max-width: 540px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-gallery img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+    
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 541px */
+
+@media only screen and (min-width:541px) and (max-width:819px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+
+}
+
+/* Screen sizes from to 820px */
+
+@media only screen and (min-width: 820px) and (max-width: 991px) {
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 10px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 992px to 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+    .custom-image{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 10px;
+    }
+
+}
