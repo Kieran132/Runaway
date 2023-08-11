@@ -59,7 +59,7 @@ def booking(request):
             'appointment': appointment,
         })
         email_from = settings.DEFAULT_FROM_EMAIL
-        recipient_list = [user.email]
+        recipient_list = [user.email, settings.DEFAULT_FROM_EMAIL]
         send_mail(subject, message, email_from, recipient_list)
 
         return render(request, 'booking_success.html', {
