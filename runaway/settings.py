@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['runawaybrewery-d81d6b05c59f.herokuapp.com', '8000-kieran132-runaway-j6rz615jtj4.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['runawaybrewery-d81d6b05c59f.herokuapp.com', '8000-kieran132-runaway-j6rz615jtj4.ws-eu103.gitpod.io']
 
 
 # Application definition
