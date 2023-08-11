@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h1>Internal Server Error</h1>
+    <p>Sorry, something went wrong on our end.</p>
+    <p>We are experiencing technical difficulties and are working to resolve the issue.</p>
+    <a href="{% url 'home' %}">Go back to the home page</a>
+</div>
+
+{% endblock %}
