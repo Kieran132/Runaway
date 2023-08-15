@@ -113,4 +113,73 @@ For the body of the project I decided to use Roboto. It is very similar to Oswal
 
 <u> Key Models </u>
 
-- 
+-  User Authentication
+
+- Allauth creates user profile and determins the depth of authentication within the app
+
+- Appointment
+    
+    - Allows only signed in user to be able to book a tour around the brewery
+    - Upon submission, time is saved and removed from any other users selecting that time
+    - Email is sent to both the users email and Runaway
+
+- Checkout
+
+    - Allows any user to process payment of their chosen purchased items
+    - Shows item added to bag within the shopping cart
+
+- Contact
+
+    - Shows user contact form which submits the form and information is sent to Runaway
+
+- Wishlist
+
+    - Allows for users to add products to their own wishlist page for future reference
+    - These can be deleted by the user
+
+- Profile
+
+    - Profile is created with the users information which is used around the app
+    - The user can update and amend their profile
+
+- Shop
+
+    - Shows all the products that Runaway has to offer
+    - Authorised admin are able to add, edit and delete products without using the admin panel
+    - User can sort items within the shop 
+    - Ability to select only certain products, instead of viewing all of them
+
+---
+
+## Skeleton Plane
+
+#### Home Page
+
+From the beginning, I wanted the home page to be a certain way and have similarities to the home page Runaway already has as I felt this is something they liked and wanted. I wanted to add some images of the products they have recently created at the top of the page to showcase to people visiting the app. Then following down the page add brief and informative text about Runaway. Keeping the page vibrant, engaging and also to the point.
+
+<img src="static/images/wireframes/home-wire.png">
+
+#### Shop Page 
+
+I wanted this page to be simple, clear and easy for the user. I felt there is nothing more annoying than having a page that is difficult to navigate and use for a simple task. Therefore, I went for a 3 row layout for the products within a card tag with image, title of the product, a button to take the user a detail page and the price.
+
+<img src="static/images/wireframes/shop-wire.png">
+
+#### Contact Page
+
+For the contact page, I wanted to create a simple form that was easy to understand for the user and one which allowed the user to submit only the neccessary field - name, email address and message. In addition, I wanted to add google maps function so the user could physically see the location of Runaway
+
+<img src="static/images/wireframes/contact-wire.png">
+
+#### About Page
+
+For this page, I decided to keep all the information about Runaway all in one easily accessible tab, that broke down into different areas. Most of this information would come from the already existing website as this is what they wanted.
+
+<img src="static/images/wireframes/about-wire.png">
+
+#### Booking Page
+
+Runaway offer tours around their brewery to the public, however this is done via an external company using their product and api, which mean added costs. I felt it would be easier and more efficient to keep this all in house and for the app to do the work for them without them having to out-source this. I wanted very simple and easy way of booking that sent out relevant information to both parties.
+
+<img src="static/images/wireframes/booking-wire.png">
+
