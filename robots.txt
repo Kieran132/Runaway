@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://runawaybrewery-d81d6b05c59f.herokuapp.com/sitemap.xml

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=bottles</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=cases</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=barrel_aged_and_blended</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=merch</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=gift_cards</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/taproom/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/visit/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/booking/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/delivery/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/trade/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/contact/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/bag/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/2/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/4/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/8/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/13/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/14/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/9/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/15/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/16/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/17/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/18/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/19/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/20/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fbooking%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/shop/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/2/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/4/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/8/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/13/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/14/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/9/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/15/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/16/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/17/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/18/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/19/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=/wishlist/add_to_wishlist/20/</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fbooking%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://runawaybrewery-d81d6b05c59f.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-08-15T18:16:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
