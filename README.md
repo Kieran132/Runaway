@@ -183,3 +183,125 @@ Runaway offer tours around their brewery to the public, however this is done via
 
 <img src="static/images/wireframes/booking-wire.png">
 
+---
+
+## Surface Plane
+
+
+
+---
+
+## Technologies Used
+
+- Python
+    -asgiref==3.7.2
+    -boto3==1.28.17
+    -botocore==1.31.17
+    -cloudinary==1.33.0
+    -dj-database-url==0.5.0
+    -dj3-cloudinary-storage==0.0.6
+    -Django==3.2.19
+    -django-allauth==0.41.0
+    -django-countries==7.2.1
+    -django-crispy-forms==1.14.0
+    -django-storages==1.13.2
+    -gunicorn==20.1.0
+    -jmespath==1.0.1
+    -oauthlib==3.2.2
+    -Pillow==9.5.0
+    -psycopg2==2.9.6
+    -python3-openid==3.2.0
+    -pytz==2023.3
+    -requests-oauthlib==1.3.1
+    -s3transfer==0.6.1
+    -sqlparse==0.4.4
+    -stripe==5.4.0
+    -urllib3==1.26.16
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- SweetAlert
+- Font Awsome
+- MailChimp
+- Google Fonts
+- Git
+- Github
+- Gitpod
+- Google Developer Tools
+- Balsamiq
+- Stripe
+- AWS
+- Widg.io - age verification widget
+
+---
+
+## Browsers used to view the app
+
+- Chrome
+- Firefox
+- Safari
+- Edge
+
+---
+
+## Testing
+
+Please click the link below to see the testing document
+
+[Testing](/TESTING.md)
+
+---
+
+## Credits
+
+#### Products
+
+- All the products came from Runaways existing website 
+
+(<https://www.therunawaybrewery.com/>)
+
+#### Code
+
+- Alot of the new features for an E-Commerce website (checkout, profile, bag, payment, AWS) I followed came from Code Institute walkthrough project, Boutique Ado
+- Adding the ability to have newsletter sign up came from MailChimp 
+        (<https://mailchimp.com/?currency=GBP>)
+
+- Age Verification came from Widg.io 
+        (<https://www.widg.io/>)
+
+- The building block to enable the user to book a tour came from 
+        (<https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78>)
+
+- Code Intitute Tutors helped iron out parts of the code that is was not able to sort out myself
+
+#### Django Documentation
+
+- Any issues involving django, I referenced their online documentation to guide me through step by step 
+
+        (<https://docs.djangoproject.com/en/4.2/>)
+
+#### Bootstrap
+
+- The styling format came from the Bootstrap library throughout the website. This is in the from of navigation bar, collapsed navigation bar, cards for all products, button designs and froms
+
+        (<https://getbootstrap.com/docs/5.3/getting-started/introduction/>)
+
+#### SweetAlert
+
+- This was a new framework I sourced in order to provide a more friendly user experience for pop up messages.
+
+        (<https://sweetalert.js.org/docs/>)
+
+#### AWS
+
+- Any issues I had with AWS I looked at their documentation for help
+
+        (<https://aws.amazon.com/>)
+
+#### Stripe
+
+- This was used with the help of their documention to allow users to purchase products
+
+        (<https://stripe.com/gb>)
+
