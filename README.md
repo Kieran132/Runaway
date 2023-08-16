@@ -194,29 +194,29 @@ Runaway offer tours around their brewery to the public, however this is done via
 ## Technologies Used
 
 - Python
-    -asgiref==3.7.2
-    -boto3==1.28.17
-    -botocore==1.31.17
-    -cloudinary==1.33.0
-    -dj-database-url==0.5.0
-    -dj3-cloudinary-storage==0.0.6
-    -Django==3.2.19
-    -django-allauth==0.41.0
-    -django-countries==7.2.1
-    -django-crispy-forms==1.14.0
-    -django-storages==1.13.2
-    -gunicorn==20.1.0
-    -jmespath==1.0.1
-    -oauthlib==3.2.2
-    -Pillow==9.5.0
-    -psycopg2==2.9.6
-    -python3-openid==3.2.0
-    -pytz==2023.3
-    -requests-oauthlib==1.3.1
-    -s3transfer==0.6.1
-    -sqlparse==0.4.4
-    -stripe==5.4.0
-    -urllib3==1.26.16
+    - asgiref==3.7.2
+    - boto3==1.28.17
+    - botocore==1.31.17
+    - cloudinary==1.33.0
+    - dj-database-url==0.5.0
+    - dj3-cloudinary-storage==0.0.6
+    - Django==3.2.19
+    - django-allauth==0.41.0
+    - django-countries==7.2.1
+    - django-crispy-forms==1.14.0
+    - django-storages==1.13.2
+    - gunicorn==20.1.0
+    - jmespath==1.0.1
+    - oauthlib==3.2.2
+    - Pillow==9.5.0
+    - psycopg2==2.9.6
+    - python3-openid==3.2.0
+    - pytz==2023.3
+    - requests-oauthlib==1.3.1
+    - s3transfer==0.6.1
+    - sqlparse==0.4.4
+    - stripe==5.4.0
+    - urllib3==1.26.16
 - HTML
 - CSS
 - Bootstrap
@@ -273,7 +273,7 @@ Please click the link below to see the testing document
 - The building block to enable the user to book a tour came from 
         (<https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78>)
 
-- Code Intitute Tutors helped iron out parts of the code that is was not able to sort out myself
+- Code Intitute Tutors helped iron out parts of the code that I was not able to sort out myself
 
 #### Django Documentation
 

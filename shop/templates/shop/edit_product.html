@@ -27,3 +27,7 @@
         </div>
     </div>
 {% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+{% include 'shop/includes/shop-sweetalert-messages-script.html' %}
+{% endblock %}

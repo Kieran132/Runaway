@@ -31,3 +31,7 @@
     </div>
 </div>
 {% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+{% include 'includes/wishlist-sweetalert-script.html' %}
+{% endblock %}
