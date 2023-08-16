@@ -9,7 +9,7 @@
             <h2 class="logo-font">Products</h2>
             <hr class="w-100 mb-1">
             {% if request.user.is_superuser %}
-            <a class="btn btn-sm btn-outline-secondary coffee-add-btn" href="{% url 'add_product'%}">Add</a>
+            <a id="shop-add-btn" class="btn btn-sm btn-outline-secondary shop-add-btn" href="{% url 'add_product'%}">Add</a>
             {% endif %}
         </div>
     </div>

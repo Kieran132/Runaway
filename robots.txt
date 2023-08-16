@@ -2,6 +2,4 @@ User-agent: *
 Disallow: /accounts/
 Disallow: /bag/
 Disallow: /profile/
-Disallow: /media/
-Disallow: /static/
 Sitemap: https://runawaybrewery-d81d6b05c59f.herokuapp.com/sitemap.xml

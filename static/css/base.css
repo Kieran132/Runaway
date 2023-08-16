@@ -30,7 +30,7 @@ h1, h2, hr {
 }
 
 .curved-btn{
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 .stnd-btn:hover{
@@ -269,6 +269,21 @@ h1, h2, hr {
 .shop-box{
     height: 100%;
     margin-top: 10px;
+}
+
+.shop-add-btn {
+    background-color: #FFC107;
+    color: #fff;
+    padding: 4px 11px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.shop-add-btn:hover{
+    background-color: #c1541f;
 }
 
 .custom-card {
@@ -788,6 +803,41 @@ background-color: #c1541f;
     .form-group-booking{
         width: 10rem;
     }
+
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 15rem;
+    }
+
+    .custom-card{
+        width: 17rem;
+    }
+
+    /* Shop Detail Page */
+
+    .shop-image-detail {
+        height: 15rem;
+    }
+
+    .detail-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
+
+    .form-row{
+        padding-bottom: 10px;
+    }
+
 }
 
 /* Styling for screen sizes from 380px */
@@ -838,6 +888,40 @@ background-color: #c1541f;
     .container-booking{
         margin-bottom: 40px;
     }
+
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 15rem;
+    }
+
+    .custom-card{
+        width: 21rem;
+    }
+
+    /* Shop Detail Page */
+
+    .shop-image-detail {
+        height: 18rem;
+    }
+
+    .detail-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
+
+    .form-row{
+        padding-bottom: 10px;
+    }
 }
 
 /* Screen sizes from 420px */
@@ -885,6 +969,40 @@ background-color: #c1541f;
     
     .container-booking{
         margin-bottom: 40px;
+    }
+
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 17rem;
+    }
+
+    .custom-card{
+        width: 23rem;
+    }
+
+    /* Shop Detail Page */
+
+    .shop-image-detail {
+        height: 20rem;
+    }
+
+    .detail-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
+
+    .form-row{
+        padding-bottom: 10px;
     }
 }
 
@@ -940,6 +1058,40 @@ background-color: #c1541f;
         margin-bottom: 40px;
     }
 
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 19rem;
+    }
+
+    .custom-card{
+        width: 26rem;
+    }
+
+    /* Shop Detail Page */
+
+    .shop-image-detail {
+        height: 22rem;
+    }
+
+    .detail-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
+
+    .form-row{
+        padding-bottom: 10px;
+    }
+
 }
 
 /* Screen sizes from to 820px */
@@ -989,6 +1141,26 @@ background-color: #c1541f;
     .container-booking{
         margin-bottom: 40px;
     }
+
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 15rem;
+    }
+
+    /* Shop Detail Page */
+
+    .shop-image-detail {
+        height: 27rem;
+    }
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
 }
 
 /* Screen sizes from 992px to 1200px */
@@ -1020,5 +1192,22 @@ background-color: #c1541f;
         height: 200px;
         padding-bottom: 10px;
     }
+
+    /* Shop Page */
+    
+    .shop-add-btn{
+        margin-bottom: 5px;
+    }
+
+    .main-shop-image {
+        height: 19rem;
+    }
+
+    /* Shop Detail Page */
+
+    .detail-btn-resp{
+        margin-bottom: 5px;
+    }
+
 
 }
