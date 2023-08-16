@@ -29,6 +29,10 @@ h1, h2, hr {
     text-decoration: none;
 }
 
+.curved-btn{
+    border-radius: 5px;
+}
+
 .stnd-btn:hover{
     background-color: #c1541f;
 }

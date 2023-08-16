@@ -79,14 +79,14 @@
     </div>
     <div class="row">
         <div class="col text-center mt-4">
-            <a href="{% url 'checkout' %}" class="btn btn-primary proceed-to-checkout-btn">Proceed to Checkout</a>
+            <a href="{% url 'checkout' %}" class="btn btn-primary proceed-to-checkout-btn curved-btn">Proceed to Checkout</a>
         </div>
     </div>
     {% else %}
     <div class="row">
         <div class="col text-center mt-5">
             <p>Your shopping bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-primary continue-shopping-btn">Continue Shopping</a>
+            <a href="{% url 'products' %}" class="btn btn-primary continue-shopping-btn curved-btn">Continue Shopping</a>
         </div>
     </div>
     {% endif %}

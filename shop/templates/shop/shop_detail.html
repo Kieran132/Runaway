@@ -56,17 +56,17 @@
                     </div>
 
                     <div class="col-12 detail-btn">
-                        <a href="{% url 'products' %}" class="btn btn-outline-black stnd-btn">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black stnd-btn curved-btn">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <input type="submit" class="btn btn-outline-success stnd-btn" id="add-to-bag" value="Add to Bag">
-                        <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn"> Add to Wishlist</a>
+                        <input type="submit" class="btn btn-outline-success stnd-btn curved-btn" id="add-to-bag" value="Add to Bag">
+                        <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn"> Add to Wishlist</a>
                         {% if request.user.is_superuser %}
-                        <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn"> Edit Product</a>
-                        <a href="{% url 'delete_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn"> Delete Product</a>
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn"> Edit Product</a>
+                        <a href="{% url 'delete_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn"> Delete Product</a>
                         {% endif %}
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
