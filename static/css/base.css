@@ -838,6 +838,17 @@ background-color: #c1541f;
         padding-bottom: 10px;
     }
 
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 16rem;
+    }
+
 }
 
 /* Styling for screen sizes from 380px */
@@ -922,6 +933,17 @@ background-color: #c1541f;
     .form-row{
         padding-bottom: 10px;
     }
+
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 16rem;
+    }
 }
 
 /* Screen sizes from 420px */
@@ -1003,6 +1025,17 @@ background-color: #c1541f;
 
     .form-row{
         padding-bottom: 10px;
+    }
+
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 18rem;
     }
 }
 
@@ -1092,6 +1125,17 @@ background-color: #c1541f;
         padding-bottom: 10px;
     }
 
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 18rem;
+    }
+
 }
 
 /* Screen sizes from to 820px */
@@ -1161,6 +1205,17 @@ background-color: #c1541f;
     .detail-btn-resp{
         margin-bottom: 5px;
     }
+
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 20rem;
+    }
 }
 
 /* Screen sizes from 992px to 1200px */
@@ -1207,6 +1262,17 @@ background-color: #c1541f;
 
     .detail-btn-resp{
         margin-bottom: 5px;
+    }
+
+    /* Add/Edit Product Page */
+
+    .product-resp{
+        padding-bottom: 15px;
+        width: fit-content;
+    }
+
+    #id_description{
+        width: 20rem;
     }
 
 

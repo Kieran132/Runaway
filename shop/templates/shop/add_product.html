@@ -3,7 +3,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container product-resp">
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
@@ -19,8 +19,8 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
-                        <a class="btn btn-outline-black curved-btn" href="{% url 'products' %}">Cancel</a>
                         <button class="btn btn-black curved-btn" type="submit">Add Product</button>
+                        <a class="btn btn-outline-black curved-btn" href="{% url 'products' %}">Cancel</a>
                     </div>
                 </form>
             </div>            
