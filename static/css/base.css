@@ -475,6 +475,7 @@ background-color: #c1541f;
 .wish-box{
     height: 100%;
     margin-top: 10px;
+    width: 16rem;
 }
 
 .wish-custom-card {
@@ -500,7 +501,7 @@ background-color: #c1541f;
 
 .wish-shop-image{
     height: 20rem;
-    width: 12rem;
+    width: auto;
 }
 
 .wish-delete-btn{
