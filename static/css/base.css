@@ -420,7 +420,7 @@ margin-right: 10px;
 }
 
 .bag-product-name{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .quantity-input-group {
@@ -469,6 +469,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 transition: background-color 0.3s ease;
+margin-bottom: 10px;
 }
 
 .proceed-to-checkout-btn:hover,
@@ -536,6 +537,7 @@ background-color: #c1541f;
 .profile-update-form .control-group .controls .lazyselect{
     border: 2px solid #07b3a3 !important;
     margin-bottom: 10px;
+    width: 15.7rem;
 }
 
 .order-history-container{
@@ -579,30 +581,30 @@ background-color: #c1541f;
     justify-content: center;
     align-items: center;
     height: 60vh;
-  }
-  
-  .form-container {
+    }
+
+.form-container {
     background-color: #f3f3f3;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .booking-label {
+    }
+
+.booking-label {
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .booking-select {
+    }
+
+.booking-select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #ccc;
-  }
-  
-  .booking-btn {
+    }
+
+.booking-btn {
     background-color: #FFC107;
     color: #fff;
     padding: 10px 20px;
@@ -610,16 +612,16 @@ background-color: #c1541f;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .booking-btn:hover {
+    }
+
+.booking-btn:hover {
     background-color: #c1541f;
-  }
-  
-  .booking-btn:disabled {
+    }
+
+.booking-btn:disabled {
     background-color: #c1541f;
     cursor: not-allowed;
-  }
+    }
 
 /* Taproom styling */
 
@@ -849,6 +851,43 @@ background-color: #c1541f;
         width: 16rem;
     }
 
+    /* Bag Page styling */
+
+    .shopping-basket-table {
+        font-size: 12px; /* Example font size adjustment */
+    }
+    
+    .table th, .table td {
+        padding: 0.25rem; /* Example padding adjustment */
+    }
+    
+    /* Adjust the styles for the product images and other elements */
+    .bag-shop-image {
+        max-width: 50px; /* Example max-width adjustment */
+    }
+    
+    .bag-product-name {
+        font-size: 10px; /* Example font size adjustment */
+    }
+
+    .proceed-to-checkout-btn{
+        margin-bottom: 10px;
+    }
+
+    .total-price {
+        font-size: 12px;
+    }
+
+    /* Checkout Success Page */
+
+    .order-confirmation-wrapper{
+        font-size: 12px;
+    }
+
+    .text-right a{
+        margin-bottom: 10px;
+    }
+
 }
 
 /* Styling for screen sizes from 380px */
@@ -944,6 +983,12 @@ background-color: #c1541f;
     #id_description{
         width: 16rem;
     }
+
+    /* Checkout Success Page */
+
+    .text-right a{
+        margin-bottom: 10px;
+    }
 }
 
 /* Screen sizes from 420px */
@@ -1036,6 +1081,12 @@ background-color: #c1541f;
 
     #id_description{
         width: 18rem;
+    }
+
+    /* Checkout Success Page */
+
+    .text-right a{
+        margin-bottom: 10px;
     }
 }
 
@@ -1134,6 +1185,12 @@ background-color: #c1541f;
 
     #id_description{
         width: 18rem;
+    }
+
+    /* Checkout Success Page */
+
+    .text-right a{
+        margin-bottom: 10px;
     }
 
 }

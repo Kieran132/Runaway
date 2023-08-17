@@ -132,6 +132,8 @@ $('.decrease').click(function(e) {
     // Function to show the pop-up
     function showPopup() {
         document.getElementById("popup-container").style.display = "block";
+
+        setTimeout(closePopup, 5000);
     }
 
     // Function to hide the pop-up
