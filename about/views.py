@@ -6,9 +6,7 @@ from .models import Appointment
 from django.contrib import messages
 from django.template.loader import render_to_string
 from django.contrib.auth.decorators import login_required
-
-
-from django.contrib.auth.decorators import login_required
+from django.utils import timezone
 
 
 @login_required

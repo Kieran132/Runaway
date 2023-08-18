@@ -2,20 +2,18 @@
 {% load static %}
 
 {% block content %}
-<section>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-sm">
-            <div class="image-container">
-                <img src="{% static 'images/runaway_event.png' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/IMG_7805.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/shandy_runaway.png' %}" class="d-block img-fluid custom-image" alt="...">
-                <img src="{% static 'images/IMG_7804.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
-            </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container-sm">
+        <div class="image-container">
+            <img src="{% static 'images/runaway_event.png' %}" class="d-block img-fluid custom-image" alt="...">
+            <img src="{% static 'images/IMG_7805.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
+            <img src="{% static 'images/shandy_runaway.png' %}" class="d-block img-fluid custom-image" alt="...">
+            <img src="{% static 'images/IMG_7804.jpeg' %}" class="d-block img-fluid custom-image" alt="...">
         </div>
     </div>
-</section>
+</div>
 
-<section class="about-section">
+<div class="about-section">
     <div class="container intro-text">
         <div class="row align-items-center">
             <div class="col-md-7">
@@ -33,9 +31,10 @@
                 <img class="img-fluid img-md" src="{% static 'images/IMG_7807.jpeg' %}" alt="Brewery">
             </div>
         </div>
-</section>
+    </div>
+</div>
 
-<section class="find-out-more">
+<div class="find-out-more">
     <div class="container">
         <div class="background-image"></div>
         <h4>Our Beer</h4>
@@ -46,9 +45,9 @@
             and bottle</p>
         <a href="{% url 'taproom' %}" class="btn stnd-btn curved-btn">FIND US IN STOCKPORT</a>
     </div>
-</section>
+</div>
 
-<section class="image-gallery">
+<div class="image-gallery">
     <div class="image-container-btm">
         <div class="d-block img-fluid">
             <img src="{% static 'images/IMG_7806.jpeg' %}" alt="Image 1">
@@ -60,6 +59,6 @@
             <img src="{% static 'images/IMG_7807.jpeg' %}" alt="Image 3">
         </div>
     </div>
-</section>
+</div>
 
 {% endblock %}

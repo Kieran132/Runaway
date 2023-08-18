@@ -2,12 +2,10 @@
 {% load static %}
 
 {% block content %}
-<section>
-    <div class="container">
-        <h1 class="taproom-heading">Taproom, Beer Garden & Bottle Shop</h1>
-        <hr class="section-divider w-100">
-    </div>
-</section>
+<div class="container">
+    <h1 class="taproom-heading">Taproom, Beer Garden & Bottle Shop</h1>
+    <hr class="section-divider w-100">
+</div>
 
 <div class="jumbotron taproom-jumbotron">
     <p class="opening-hours">TAPROOM OPENING HOURS</p>
@@ -15,64 +13,65 @@
     <p>Astley Street Stockport SK4 1AW</p>
 </div>
 
-<section>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-7">
-                <p>
-                    We love to share our passion for brewing and have built an informal Taproom and Beer Garden for you
-                    to enjoy our beer direct from the source.</p>
-                <p>Our taproom is designed to showcase our beer, with 10 lines of keg and 2 cask available each week,
-                    plus a wide range of bottled beer to drink in or take away. We also offer wine, independent cider,
-                    and soft drinks from Steep Soda.</p>
-                <p>We are currently operating card-only payments. Well-behaved children and dogs (on a lead) are
-                    welcome in the Taproom and Beer Garden.</p>
-                <p>Our taproom is less than 10 minutes' walk from Stockport Station (rail) and just a stone's throw from
-                    the bus interchange. Stockport is easily accessible from central Manchester with regular train
-                    services from Piccadilly taking around 10 minutes.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="img-fluid img-md taproom-image" src="{% static 'images/taproom_info.jpg' %}" alt="Brewery">
-            </div>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-7">
+            <p>
+                We love to share our passion for brewing and have built an informal Taproom and Beer Garden for you
+                to enjoy our beer direct from the source.</p>
+            <p>Our taproom is designed to showcase our beer, with 10 lines of keg and 2 cask available each week,
+                plus a wide range of bottled beer to drink in or take away. We also offer wine, independent cider,
+                and soft drinks from Steep Soda.</p>
+            <p>We are currently operating card-only payments. Well-behaved children and dogs (on a lead) are
+                welcome in the Taproom and Beer Garden.</p>
+            <p>Our taproom is less than 10 minutes' walk from Stockport Station (rail) and just a stone's throw from
+                the bus interchange. Stockport is easily accessible from central Manchester with regular train
+                services from Piccadilly taking around 10 minutes.
+            </p>
         </div>
-        <div class="row">
-            <p>
-                Check out our <a href="#" class="plan-link">Plan Your Visit</a> page for full details.
-            </p>
-            <p>
-                <a href="{% url 'contact' %}" class="find-us-link">FIND US</a>
-            </p>
+        <div class="col-md-5">
+            <img class="img-fluid img-md taproom-image" src="{% static 'images/taproom_info.jpg' %}" alt="Brewery">
         </div>
     </div>
-</section>
+    <div class="row">
+        <p>
+            Check out our <a href="#" class="plan-link">Plan Your Visit</a> page for full details.
+        </p>
+        <p>
+            <a href="{% url 'contact' %}" class="find-us-link">FIND US</a>
+        </p>
+    </div>
+</div>
 <hr class="section-divider">
 
-<section>
-    <div class="container">
-        <div class="row">
-            <h3 class="bottle-shop-heading">RUNAWAY BREWERY BOTTLE SHOP</h3>
-        </div>
-        <div class="row">
-            <p>Open: Monday to Friday 10:00 - 16:00</p>
-            <p>Street Stockport SK4 1AW</p>
-        </div>
-        <div class="row">
-            <p>We sell bottled beer to take away whenever the brewery is open. You can also order online for home
-                delivery or click and collect:</p>
-        </div>
-        <div class="row">
-            <p>Home delivery: <a href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards"" class="order-link">Order Online</a> and select home delivery as your preferred
-                method</p>
-            <p>Click and collect: <a href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards"" class="order-link">Order Online</a> and select to collect it from the
-                Brewery Bottle Shop free of charge.
-                Orders can be collected during business hours (Mon to Fri 10am-4pm). Please allow 24 hours between
-                placing your order and making collection, unless otherwise agreed with the brewery</p>
-        </div>
-        <div class="row">
-            <a href="{% url 'delivery' %}" class="delivery-link">Read more about our delivery and collection service here.</a>
-        </div>
+<div class="container">
+    <div class="row">
+        <h3 class="bottle-shop-heading">RUNAWAY BREWERY BOTTLE SHOP</h3>
     </div>
-</section>
+    <div class="row">
+        <p>Open: Monday to Friday 10:00 - 16:00</p>
+        <p>Street Stockport SK4 1AW</p>
+    </div>
+    <div class="row">
+        <p>We sell bottled beer to take away whenever the brewery is open. You can also order online for home
+            delivery or click and collect:</p>
+    </div>
+    <div class="row">
+        <p>Home delivery: <a
+                href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards" class="
+                order-link">Order Online</a> and select home delivery as your preferred
+            method</p>
+        <p>Click and collect: <a
+                href="{% url 'products' %}?category=bottles,cases,barrel_aged_and_blended,merch,gift_cards" class="
+                order-link">Order Online</a> and select to collect it from the
+            Brewery Bottle Shop free of charge.
+            Orders can be collected during business hours (Mon to Fri 10am-4pm). Please allow 24 hours between
+            placing your order and making collection, unless otherwise agreed with the brewery</p>
+    </div>
+    <div class="row">
+        <a href="{% url 'delivery' %}" class="delivery-link">Read more about our delivery and collection service
+            here.</a>
+    </div>
+</div>
 
 {% endblock %}

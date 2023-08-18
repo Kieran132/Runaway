@@ -18,12 +18,13 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
     {% endblock %}
-    
+
     {% block extra_css %}
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-    <link rel="android-chrome" type="image/png" sizes="192x192" href="{% static 'favicon/android-chrome-192x192.png' %}">
+    <link rel="icon android-chrome" type="image/png" sizes="192x192"
+        href="{% static 'favicon/android-chrome-192x192.png' %}">
     {% endblock %}
 
     {% block corejs %}
@@ -103,19 +104,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                         </li>
-                        <li class="nav-item dropdown list-inline-item">
+                        <li class="nav-item dropdown list-inline-item" id="user-options-button">
                             <a class="nav-link dropdown-toggle list-inline-item" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 My Account
                             </a>
-                            <ul class="dropdown-menu border-0 dropdown-menu-end" aria-labelledby="user-options">
+                            <ul class="dropdown-menu border-0 dropdown-menu-end" aria-labelledby="user-options-button">
                                 {% if request.user.is_authenticated %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                                <li><a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a></li>
+                                <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
                                 {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                                <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
                                 {% endif %}
                             </ul>
                         </li>
@@ -129,8 +130,8 @@
                     </ul>
                     <form method="GET" action="{% url 'products' %}" class="d-flex home-search" role="search">
                         <div class="input-group search-bar">
-                            <input class="form-control me-2 home-search curved-btn" type="search" name="q" placeholder="Search"
-                                aria-label="Search">
+                            <input class="form-control me-2 home-search curved-btn" type="search" name="q"
+                                placeholder="Search" aria-label="Search">
                             <button class=" form-control btn-sm btn-outline-secondary search-btn curved-btn"
                                 type="submit">Search</button>
                         </div>
@@ -163,13 +164,13 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list-inline float-md-end footer-social">
-                        <li class="social-icon"><a href="https://www.facebook.com/RunawayBrewery/"
-                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <li class="social-icon"><a href="https://www.facebook.com/RunawayBrewery/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="social-icon"><a href="https://twitter.com/RunawayBrewery" target="_blank"><i
                                     class="fa fa-twitter"></i></a></li>
-                        <li class="social-icon"><a href="https://www.instagram.com/runawaybrewery/"
-                                target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li class="social-icon"><a href="https://www.instagram.com/runawaybrewery/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
                         <li class="social-icon"><a href="https://github.com/Kieran132" target="_blank"><i
                                     class="fa fa-github"></i></a></li>
                         <li class="social-icon"><a href="https://www.linkedin.com/in/kieran-mclean95/"
@@ -177,8 +178,9 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </footer>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
     </script>
 </body>
 
