@@ -83,7 +83,6 @@ h1, h2, hr {
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: white;
     background-color: #FFC107;
-    border-color: #FFC107;
 }
 
 .allauth-form-inner-content button:hover{
@@ -483,7 +482,6 @@ background-color: #c1541f;
     width: 7%;
     background-color: #FFC107;
     color: #fff;
-    border-color: #FFC107;
 }
 
 .form-check-input[type=checkbox]{

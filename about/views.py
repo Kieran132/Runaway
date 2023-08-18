@@ -15,7 +15,8 @@ def booking(request):
     validateWeekdays = isWeekdayValid(weekdays)
 
     times = [
-        "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM", "6:30 PM", "7 PM", "7:30 PM"
+        "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM",
+        "6:30 PM", "7 PM", "7:30 PM"
     ]
 
     # Get the available time slots based on the selected day
@@ -26,13 +27,14 @@ def booking(request):
     if request.method == 'POST':
         service = request.POST.get('service')
         day = request.POST.get('day')
-        time = request.POST.get('time')  # Retrieve the selected time from the form
+        time = request.POST.get('time')
 
         if not is_day_and_time_available(day, time):
-            messages.error(request, "The selected day and time are not available.")
+            messages.error(
+                request, "The selected day and time are not available.")
             return redirect('booking')
 
-        if service == None:
+        if service is None:
             messages.success(request, "Please Select A Service!")
             return redirect('booking')
 
@@ -76,7 +78,8 @@ def booking(request):
 def bookingSubmit(request):
     user = request.user
     times = [
-        "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM", "6:30 PM", "7 PM", "7:30 PM"
+        "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM",
+        "6:30 PM", "7 PM", "7:30 PM"
     ]
     today = datetime.now()
     minDate = today.strftime('%Y-%m-%d')
@@ -93,11 +96,12 @@ def bookingSubmit(request):
 
         date = datetime.today().date()
 
-        if service != None:
+        if service is None:
             if day <= maxDate and day >= minDate:
-                if date.weekday() in [0, 3, 5]:  # Monday, Thursday, and Saturday have weekday values of 0, 3, and 5 respectively
+                if date.weekday() in [0, 3, 5]:
                     if Appointment.objects.filter(day=day).count() < 11:
-                        if Appointment.objects.filter(day=day, time=time).count() < 1:
+                        if Appointment.objects.filter(
+                                            day=day, time=time).count() < 1:
                             appointment = Appointment.objects.create(
                                 user=user,
                                 service=service,
@@ -106,25 +110,33 @@ def bookingSubmit(request):
                             )
                             # Send email confirmation
                             subject = 'Booking Confirmation'
-                            message = render_to_string('email/booking_confirmation.html', {
-                                'appointment': appointment,
-                            })
+                            message = render_to_string(
+                                'email/booking_confirmation.html', {
+                                    'appointment': appointment,
+                                })
                             email_from = settings.DEFAULT_FROM_EMAIL
-                            recipient_list = [user.email, settings.DEFAULT_FROM_EMAIL]
-                            send_mail(subject, message, email_from, recipient_list, html_message=message)
+                            recipient_list = [user.email,
+                                              settings.DEFAULT_FROM_EMAIL]
+                            send_mail(
+                                subject, message, email_from,
+                                recipient_list, html_message=message)
 
                             return render(request, 'booking_success.html', {
                                 'appointment': appointment,
                                 'times': times,
                             })
                         else:
-                            messages.success(request, "The Selected Time Has Been Reserved Before!")
+                            messages.success(
+                                request,
+                                "The Selected Time Has Been Reserved Before!")
                     else:
                         messages.success(request, "The Selected Day Is Full!")
                 else:
                     messages.success(request, "The Selected Date Is Incorrect")
             else:
-                messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
+                messages.success(
+                    request,
+                    "The Selected Date Isn't In The Correct Time Period!")
         else:
             messages.success(request, "Please Select A Service!")
 
@@ -183,7 +195,7 @@ def validWeekday(days):
     weekdays = []
     for i in range(days):
         x = today + timedelta(days=i)
-        if x.weekday() in [3, 4, 5]:  # Thursday, Friday, and Saturday have weekday values of 3, 4, and 5 respectively
+        if x.weekday() in [3, 4, 5]:
             weekdays.append(x.strftime('%Y-%m-%d'))
     return weekdays
 
@@ -199,23 +211,19 @@ def isWeekdayValid(x):
 
 def taproom(request):
     """ A view to return the taproom information page """
-    
     return render(request, 'taproom.html')
 
 
 def delivery(request):
     """ A view to return the delivery information page """
-    
     return render(request, 'delivery_collection.html')
 
 
 def visit(request):
     """ A view to return the visit information page """
-    
     return render(request, 'visit.html')
 
 
 def trade(request):
     """ A view to return the trade information page """
-    
     return render(request, 'trade.html')

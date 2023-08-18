@@ -3,7 +3,7 @@ from django.contrib import messages
 
 
 def view_bag(request):
-    """ A view to return the shopping bag page """  
+    """ A view to return the shopping bag page """
     return render(request, 'bag/bag.html')
 
 

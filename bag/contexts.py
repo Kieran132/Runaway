@@ -34,7 +34,8 @@ def bag_contents(request):
                 })
 
     if total < settings. FREE_DELIVERY_THRESHOLD:
-        delivery = round(total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100),2)
+        delivery = round(
+            total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100), 2)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
