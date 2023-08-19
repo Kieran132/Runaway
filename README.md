@@ -187,7 +187,66 @@ Runaway offer tours around their brewery to the public, however this is done via
 
 ## Surface Plane
 
+#### Navigation Bar
 
+- Is implemented throughout the whole app on all screen sizes
+- Easy to use and understand
+
+<img src="static/images/README-images/navbar.png">
+
+#### Footer
+
+- Inline with the style of navbar
+- Clean, minimal looking
+- Has Social media links to Runaways media pages via a new tab
+
+<img src="static/images/README-images/footer.png">
+
+#### Home Page
+
+- User engagement with pictures of products
+- Brief outline of the philosophy of Runaway and image of their new premises
+- Find out more button for users wanting to know more
+- Bottom of the page, more images to be more engaging with the user
+
+<img src="static/images/README-images/index-top-images.png">
+<img src="static/images/README-images/index-about.png">
+
+#### Shop Page
+
+- Products are even in size and position
+- Clear and easy to understand what the products are
+- Easy to navigate to more detail page with big colorful button
+- Under sort dropdown, clearly shows how many items on the page
+
+<img src="static/images/README-images/shop.png">
+
+#### Pop Up Messages
+
+- Throughout the project the User is prompted by certain pop up messages depending on the task they have done
+
+Updating product quantity in bag
+
+<img src="static/images/README-images/notification-pop-up-messages.png">
+
+When an item is added to the Users bag
+
+<img src="static/images/README-images/add-to-bag-message.png">
+
+#### Shopping Bag Page
+
+- Information is displayed to the user clearly in a table
+- Clear hints on what the user can do, for exmplae update/delete buttons two different colors 
+- Bright yellow button, following the theme, prompting the user to go to checkout
+
+<img src="static/images/README-images/shopping-bag.png">
+
+#### Booking Page
+
+- Very simple page which outlines what they user has to do
+- Upon submission both User and Runaway both recieve an email confirmation and also the User will be taken to booking success page
+
+<img src="static/images/README-images/book-a-tour.png">
 
 ---
 

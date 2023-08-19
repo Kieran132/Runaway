@@ -26,6 +26,11 @@
                 </select>
             </div>
         </div>
+        <div>
+            <p>
+                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+            </p>
+        </div>
     </div>
     <div class="row shop-row">
         {% for product in products %}
