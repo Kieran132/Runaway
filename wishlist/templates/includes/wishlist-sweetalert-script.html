@@ -19,6 +19,14 @@
         showConfirmButton: false,
         timer: 3000
     });
+    {% elif message.tags == 'warning' and message.message == 'This item is already in your wishlist.' %}
+    Swal.fire({
+        icon: 'warning',
+        title: 'Warning',
+        text: '{{ message }}',
+        showConfirmButton: false,
+        timer: 3000
+    });
     {% endif %}
     {% endfor %}
     {% endif %}
