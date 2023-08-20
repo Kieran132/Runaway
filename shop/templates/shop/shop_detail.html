@@ -63,7 +63,9 @@
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
                         <input type="submit" class="btn btn-outline-success stnd-btn curved-btn detail-btn-resp" id="add-to-bag" value="Add to Bag">
+                        {% if request.user.is_authenticated %}
                         <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn detail-btn-resp"> Add to Wishlist</a>
+                        {% endif %}
                         {% if request.user.is_superuser %}
                         <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn detail-btn-resp"> Edit Product</a>
                         <a href="{% url 'delete_product' product.id %}" class="btn btn-sm btn-outline-secondary stnd-btn curved-btn detail-btn-resp"> Delete Product</a>

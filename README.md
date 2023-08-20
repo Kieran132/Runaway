@@ -14,23 +14,7 @@
 
 - Project Goals
 - UXD - User Experience Design
-- Existing Features
- - Home Page
- - Shop
- - About
-  - Taproom & Bottle Shop
-  - Plan Your Visit
-  - Book A Tour
-  - Delivery and Collection
-  - Trade
- - Contact
- - My Account
-  - Log In/ Log Out
-  - Sign uUp
-  - My Profile
-  - Wishlist
- - Shopping bag
- - Checkout
+- Marketing
 - Technologies Used
 - Testing
 - Deployment
@@ -69,11 +53,23 @@ In this design phase, I had discussion with the people at Runaway Brewery to out
 - Apply clean, more personal design to their website
 - Allows for CRUD functionality for admin users
 
-<u> Users and User Needs </u>
+<u> Regular Site User Stories </u>
 
-- Beer lovers looking for their next place to visit
-- Easy and simple navigation through the app
-- Simple understanding of what the app is about and its uses
+- As a user, I am looking for their next place to visit as I enjoy new and exciting beers
+- As a user, I want the app to be easy and simple navigation through the app
+- As a user, I want a simple understanding of what the app is about and its uses
+
+<u> Customer User Stories </u>
+
+- As a customer, I want to be able to purchase products easily
+- As a customer, I want a shop overview and chance to view product in more detail
+- As a customer, I want to be able to view my shopping bag, and adjust accordingly
+
+<u> Logged In Customer Stories </u>
+
+- As a logged-in user, I want the site to save my details
+- As a logged-in user, I want the ability to view previous order history
+- As a logged-in user, I want email confirmation with either booking a tour or placing an order
 
 ---
 
@@ -247,6 +243,24 @@ When an item is added to the Users bag
 - Upon submission both User and Runaway both recieve an email confirmation and also the User will be taken to booking success page
 
 <img src="static/images/README-images/book-a-tour.png">
+
+---
+
+## Marketing
+
+#### Business Plan
+
+Runaway Brewery is an already functioning and very successful company with a working business plan. Due to the nature of the business it is both B2C (business to customer) and B2B (business to business). This is because the e-commerce platform allows for both the public user to purchase individual products directly form the website, and for any trade businesses to follow the relevant links to where Runaway sells their product on the wholesale market.
+
+Furthermore, to further engage with target audience Runaway has set up numerous social media platforms (which are linked in the footer of this project)
+
+Facebook - https://www.facebook.com/RunawayBrewery/
+
+Twitter - https://twitter.com/RunawayBrewery
+
+Instagram - https://www.instagram.com/runawaybrewery/
+
+In addition to these media platforms I decided to add MailChimp to the project as another way for any user to sign up and recieve newletters or any promotions. This increases the reach Runaway has to new or existing customers, enticing them to purchase their products
 
 ---
 

@@ -2,6 +2,55 @@
 ---
 ### Manual Testing
 
+#### Navigation Bar
+
+- Navigation bar is fully responsive on all resolutions
+- All tab heading redirect to the correct pages
+- Aulauth verification is correctly working by showing sign-up/login before loggin in and My profile/Log-out/Wishlist once signed in
+
+#### Footer
+
+- Font Awsome links correctly redirect to social media pages
+- Links open in a new broswer
+- Fully responsive on all screen sizes
+
+#### Shop
+
+- The product cards all are even in size and spacing
+- Sort drop down correctly works depending on how the user sorts the page
+- Data within the product cards is correct from cross referencing with the database
+- Age Verification pop up shows for any user to authenticate age
+
+#### Shop Details
+
+- View detials on shop.html correctly redirects to the view details page with correct information
+- All buttons showing if User is logged in
+- Only select buttons show when no user is logged in
+- Plus/Minus for quantity selection correctly works 
+- Size drop down correctly works for t-shirt product
+
+#### Wishlist
+
+- Correct product is added to wishlist
+- Pop up messages correctly show depending on user task - add/delete/product already exists
+- Only shows when user has logged in
+
+#### Shopping Bag
+
+- Quantity plus/minus correctly works
+- Product can be updated and deleted correcty
+- Correct information is present (with size if chosen)
+- Price/total price are correct
+- Add item to bag with correct information appears
+- Shopping cart in navigation bar correctly redirects user to shopping bag page
+- If no products are present, a button correctly redirects to shop.html
+
+#### Checkout
+
+- Checkout shows correct product/quantity/price
+- If user has saved information this is present
+- Update user information also correctly works
+- Form responds to invalid inputs
 
 ---
 ### Validation
@@ -29,3 +78,85 @@
 
 ---
 ### Bugs/Issues and Resolutions
+
+#### Gmail SMTP
+
+When setting up email confirmation throughout the project, I came across issue when submitting the contact form. The information inputted by the user (name, email address and message) was not being sent to the terminal. 
+
+Resolution:
+
+Withing my env.py file, I did not set the email password to one given by Google App Passwords. To obtain this password I did the following:
+- Logged into Google account
+- Turned off 2 step Verification
+- Searched for App Passwords
+- First Dropdown selected Gmail
+- Second Dropdown inputted app Name
+- App password is copied and added to env.py file
+
+#### Booked Tour Time Not Showing On Booking_Success.html
+
+Initally setting up the function to be able to book a tour by selecting day and time so when the user clicked submit, this information carried on over to a confirmation page outlinig what the use has booked. The type of booking (Tour) and the day the user selected showed, however the time the User selected was not showing.
+
+Resolution:
+
+The function was not retrieving the time the user submited. To resolve this I added:
+
+    time = request.POST.get('time')
+
+This addition to the function was able to retrieve the missing information
+
+#### Static File Root
+
+All of my images initailly were not showing after setting up AWS as the database for all media and static files.
+
+Resolution:
+
+    {% static '`file path name`' %}
+
+#### Sweet Alert Script Source Tag
+
+As a few of my HTML pages have pop up messages showing to the user, it was best to create an include folder to store the HTML script files in order to keep the pages clean and not over crowded. Initially it was:
+
+    {% include '/workspace/Runaway/shop/templates/includes/quantity_input_script.html' %}
+
+However this was not finding the file as the file path was incorrect, it should be:
+
+    {% include 'shop/templates/includes/quantity_input_script.html' %}
+
+#### Shop Images
+
+I had a could of bugs/issues with the images on the shop pages.
+
+Firstly, the if statement to show images started with: src="{{ product.image.url }}. However, this was not calling the image as the for loop was stated as {% for item in bag_items %}.
+
+Resolution:
+
+    src="{{ item.product.image.url }}
+
+Second bug/issue I had was when the Admin User didnt select an image when adding a new product, no image was showing.
+
+Resolution:
+
+    src="{% static 'images/no-image-icon.png' %}
+
+This followed on from previous issue with adding static as the file path.
+
+#### User Checkout
+
+When the user checked out with a certain product that equated to less than delivery cost the overall price was in the negatives giving this error:
+ 
+    InvalidRequestError at /checkout/
+    Request req_yIdnbCAG1kBEjq: This value must be greater than or equal to 1.
+
+This was because within me bag/context.py file it had this: `if total < settings. FREE_DELIVERY_THRESHOLD:`
+
+Resolution:
+
+    if total < settings. FREE_DELIVERY_THRESHOLD:
+
+And also added: 
+    
+    delivery = round(
+            total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100), 2)
+
+This meant that the total amount would be rounded up to the nearest two decimal place.
