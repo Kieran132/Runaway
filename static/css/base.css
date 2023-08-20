@@ -20,7 +20,7 @@ h1, h2, hr {
 
 .stnd-btn {
     background-color: #FFC107;
-    color: #fff;
+    color: #2C2B2B;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -62,7 +62,7 @@ h1, h2, hr {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: #2C2B2B;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -81,7 +81,7 @@ h1, h2, hr {
 }
 
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: white;
+	color: #2C2B2B;
     background-color: #FFC107;
 }
 
@@ -103,7 +103,7 @@ h1, h2, hr {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #07b3a3;
+    color: #055C52;
 }
 
 .home-nav {
@@ -122,7 +122,7 @@ h1, h2, hr {
 .search-btn{
     font-size: 16px;
     text-transform: uppercase;
-    color: #fff;
+    color: #2C2B2B;
     background-color: #FFC107;
     border: none;
     border-radius: 5px;
@@ -140,7 +140,7 @@ h1, h2, hr {
 
 .shop-icon {
     font-size: 16px;
-    color: #07b3a3;
+    color: #055C52;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ h1, h2, hr {
 }
 
 .footer-social li a {
-    color: #07b3a3;
+    color: #055C52;
     ;
 }
 
@@ -186,7 +186,7 @@ h1, h2, hr {
 }
 
 .copyright {
-    color: #07b3a3;
+    color: #055C52;
     padding-left: 30px;
 }
 
@@ -272,7 +272,7 @@ h1, h2, hr {
 
 .shop-add-btn {
     background-color: #FFC107;
-    color: #fff;
+    color: #2C2B2B;
     padding: 4px 11px;
     font-size: 15px;
     border: none;
@@ -345,7 +345,7 @@ h1, h2, hr {
 .text-right a,
 .text-right button{
     background-color: #FFC107;
-    color: #fff;
+    color: #2C2B2B;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -462,7 +462,7 @@ color: #333;
 padding: 10px 20px;
 font-size: 16px;
 text-transform: uppercase;
-color: #fff;
+color: #2C2B2B;
 background-color: #FFC107;
 border: none;
 border-radius: 5px;
@@ -481,7 +481,7 @@ background-color: #c1541f;
 .checkout-tick:checked{
     width: 7%;
     background-color: #FFC107;
-    color: #fff;
+    color: #2C2B2B;
 }
 
 .form-check-input[type=checkbox]{
@@ -604,7 +604,7 @@ background-color: #c1541f;
 
 .booking-btn {
     background-color: #FFC107;
-    color: #fff;
+    color: #2C2B2B;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
