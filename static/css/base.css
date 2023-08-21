@@ -107,7 +107,7 @@ h1, h2, hr {
 }
 
 .home-nav {
-    background-color: white;
+    background-color: #f4f1de;
 }
 
 .navbar-toggler{
@@ -173,6 +173,7 @@ h1, h2, hr {
     justify-content: right;
     letter-spacing: 60px;
     font-size: 20px;
+    padding-top: 10px;
 }
 
 .footer-social li a {
@@ -182,12 +183,13 @@ h1, h2, hr {
 
 .home-footer {
     margin-top: 10px;
-    background-color: white;
+    background-color: #f4f1de;
 }
 
 .copyright {
     color: #055C52;
     padding-left: 30px;
+    padding-top: 10px;
 }
 
 /* Home page styling */
@@ -787,6 +789,7 @@ background-color: #c1541f;
         letter-spacing: 30px;
     }
 
+
     /* Taproom page styling */
 
     .delivery-link{
@@ -924,6 +927,7 @@ background-color: #c1541f;
         letter-spacing: 40px;
         font-size: 13px;
     }
+
 
     /* Taproom page styling */
 
