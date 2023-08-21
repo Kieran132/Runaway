@@ -19,6 +19,14 @@
         showConfirmButton: false,
         timer: 3000
     });
+    {% elif message.tags == 'success' and message.message == 'Product added successfully.'  %}
+    Swal.fire({
+        icon: 'success',
+        title: 'Added To Bag',
+        text: '{{ message }}',
+        showConfirmButton: false,
+        timer: 3000
+    });
     {% endif %}
     {% endfor %}
     {% endif %}

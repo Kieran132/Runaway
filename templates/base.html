@@ -127,6 +127,17 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <div class="text-center shop-icon">
+                                <p>
+                                    {% if grand_total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    £0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </li>
                     </ul>
                     <form method="GET" action="{% url 'products' %}" class="d-flex home-search" role="search">
                         <div class="input-group search-bar">

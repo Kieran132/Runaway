@@ -39,7 +39,11 @@ def adjust_bag(request, item_id):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    quantity = int(request.POST.get('quantity'))
+    quantity_str = request.POST.get('quantity')
+    if quantity_str and quantity_str.isdigit():
+        quantity = int(quantity_str)
+    else:
+        quantity = 1
     redirect_url = request.POST.get('redirect_url')
     size = None
     if 'product_size' in request.POST:
@@ -64,7 +68,6 @@ def add_to_bag(request, item_id):
 
     messages.success(request, 'Product added successfully.')
 
-    print(request.POST)
     return redirect(redirect_url)
 
 

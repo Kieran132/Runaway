@@ -75,17 +75,10 @@
                     {% endwith %}
                     </div>
             </form>
-            <div id="popup-container" class="popup-container">
-                <div class="popup-content">
-                    <span class="close-popup" id="close-popup">&times;</span>
-                    <p>Item added to your bag!</p>
-                    <p>{{product.name}}</p>
-                    <p>£{{ product.price }}</p>
-                </div>
-            </div>
         </div>
     </div>
 </div>
+{% include 'bag/includes/sweet_alert_script.html' %}
 <script type="text/javascript">
 
 // Disable +/- buttons outside 1-99 range
@@ -129,25 +122,6 @@ $('.decrease').click(function(e) {
    var itemId = $(closestInput).data('item_id');
    handleEnableDisable(itemId);
 });
-</script>
-<script>
-    // Function to show the pop-up
-    function showPopup() {
-        document.getElementById("popup-container").style.display = "block";
-
-        setTimeout(closePopup, 5000);
-    }
-
-    // Function to hide the pop-up
-    function closePopup() {
-        document.getElementById("popup-container").style.display = "none";
-    }
-
-    // Attach click event handler to the "Add to Bag" button
-    document.getElementById("add-to-bag").addEventListener("click", showPopup);
-
-    // Attach click event handler to the close button within the pop-up
-    document.getElementById("close-popup").addEventListener("click", closePopup);
 </script>
 
 
