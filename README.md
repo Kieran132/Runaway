@@ -264,6 +264,14 @@ In addition to these media platforms I decided to add MailChimp to the project a
 
 ---
 
+## Future Updates and Improvements
+
+- Spend time taking high quality pictures
+- Add social media update links to home page. When admin create an instagram post it is also posted on the app
+- Addition of Promotion discount offers, example spend £30 on bottles and get delivery free
+
+---
+
 ## Technologies Used
 
 - Python
@@ -499,6 +507,10 @@ Connecting Heroku to AWS S3
 - Delete the DISABLE_COLLECTSTATIC variable from your Cvars and deploy your Heroku app
 - With your S3 bucket now set up, you can create a new folder called media (at the same level as the newly added static folder) and upload any required media files to it.
         - PLEASE MAKE SURE media AND static FILES ARE PUBLICLY ACCESSIBLE UNDER PERMISSIONS
+
+---
+
+
 
 
 ## Credits
