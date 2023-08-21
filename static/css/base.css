@@ -149,6 +149,10 @@ h1, h2, hr {
     padding-bottom: 8px;
 }
 
+.bag-total{
+    text-decoration: none;
+}
+
 .banner{
     background-color: #FFC107;
 }
@@ -831,6 +835,7 @@ background-color: #c1541f;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
     }
 
     .detail-btn-resp{
@@ -855,20 +860,20 @@ background-color: #c1541f;
     /* Bag Page styling */
 
     .shopping-basket-table {
-        font-size: 12px; /* Example font size adjustment */
+        font-size: 12px; 
     }
     
     .table th, .table td {
-        padding: 0.25rem; /* Example padding adjustment */
+        padding: 0.25rem; 
     }
     
-    /* Adjust the styles for the product images and other elements */
+    
     .bag-shop-image {
-        max-width: 50px; /* Example max-width adjustment */
+        max-width: 50px; 
     }
     
     .bag-product-name {
-        font-size: 10px; /* Example font size adjustment */
+        font-size: 10px; 
     }
 
     .proceed-to-checkout-btn{
@@ -965,6 +970,7 @@ background-color: #c1541f;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .detail-btn-resp{
@@ -1064,6 +1070,7 @@ background-color: #c1541f;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .detail-btn-resp{
@@ -1168,6 +1175,7 @@ background-color: #c1541f;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .detail-btn-resp{
@@ -1261,6 +1269,13 @@ background-color: #c1541f;
         height: 27rem;
     }
 
+    .detail-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
     .detail-btn-resp{
         margin-bottom: 5px;
     }
@@ -1333,6 +1348,12 @@ background-color: #c1541f;
     #id_description{
         width: 20rem;
     }
+}
 
+@media only screen and (min-width: 1201px) and (max-width: 1600px){
+
+    .delete-btn-lrg{
+        margin-top: 5px;
+    }
 
 }
