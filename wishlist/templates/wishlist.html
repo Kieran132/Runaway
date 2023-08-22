@@ -25,7 +25,7 @@
 
                     <small class="text-muted">£{{ item.product.price }}</small>
                 </div>
-                <a href="{% url 'delete_wishlist_product' product_id=item.product.id %}" class="btn btn-sm btn-outline-secondary wish-delete-btn stnd-btn">Delete Product</a>
+                <a href="{% url 'delete_wishlist_product' product_id=item.product.id %}?from_wishlist_page=true" class="btn btn-sm btn-outline-secondary wish-delete-btn stnd-btn">Delete Product</a>
             </div>
         </div>
         {% endfor %}

@@ -42,9 +42,17 @@ def add_to_wishlist(request, product_id):
 
 @login_required
 def delete_wishlist_product(request, product_id):
-    """ Deletes product for the users wishlist """
+    """ Removes product from the user's wishlist """
 
     product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted successfully.')
-    return redirect(reverse('wishlist'))
+    
+    wishlist_item = get_object_or_404(
+        Wishlist, user=request.user, product=product)
+
+    if request.GET.get('from_wishlist_page') == 'true':
+        wishlist_item.delete()
+        messages.success(request, 'Product deleted successfully.')
+    else:
+        messages.error(request, 'Invalid request to delete product.')
+
+    return redirect('wishlist')
