@@ -7,8 +7,19 @@ from django.conf import settings
 
 def contact(request):
     """
-    Function obtains the users input fields then uses Google smtp backend
-    server to send the information to an external email
+    Process and send user-submitted contact information via email.
+
+    This function handles the submission of a contact form by obtaining user
+    input fields (name, email, and message), and then utilizes the Google
+    SMTP backend server to send the information as an email to a designated
+    external email address. After successfully sending the email, a success
+    message is displayed to the user.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered HTML response with the appropriate message.
     """
     if request.method == 'POST':
         name = request.POST['name']

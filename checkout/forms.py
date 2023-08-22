@@ -3,6 +3,21 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Form for creating and updating order information.
+
+    This form is used to create and update order details for the checkout process.
+    It includes placeholders and styling for input fields and adjusts widget attributes.
+
+    Attributes:
+        Meta (class): A nested class to define the form's metadata, including the
+            associated model and fields.
+
+    Methods:
+        __init__(self, *args, **kwargs): Custom initialization method to modify
+            form behavior, set placeholders, classes, and focus.
+
+    """
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',

@@ -11,6 +11,19 @@ from django.utils import timezone
 
 @login_required
 def booking(request):
+    """
+    Handle the booking process.
+
+    This view handles the user's booking process for appointments.
+    It displays available time slots, validates selections,
+    and sends email confirmations upon successful booking.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The response rendered from the template.
+    """
     weekdays = validWeekday(22)
     validateWeekdays = isWeekdayValid(weekdays)
 
@@ -76,6 +89,18 @@ def booking(request):
 
 
 def bookingSubmit(request):
+    """
+    Submit a booking request.
+
+    This view handles the submission of a booking request and performs
+    various checks for availability, user inputs, and valid dates.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The response to redirect the user after submission.
+    """
     user = request.user
     times = [
         "3 PM", "3:30 PM", "4 PM", "4:30 PM", "5 PM", "5:30 PM", "6 PM",
@@ -144,6 +169,19 @@ def bookingSubmit(request):
 
 
 def booking_success(request, appointment_id):
+    """
+    Display booking success page.
+
+    This view displays a success page upon successful booking,
+    showing the appointment details.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        appointment_id (int): The ID of the booked appointment.
+
+    Returns:
+        HttpResponse: The response rendered from the template.
+    """
     try:
         appointment = Appointment.objects.get(id=appointment_id)
     except Appointment.DoesNotExist:
@@ -162,7 +200,16 @@ def booking_success(request, appointment_id):
 
 
 def is_day_and_time_available(day, time):
-    # Check if the selected day and time are available
+    """
+    Check if a day and time are available for booking.
+
+    Args:
+        day (str): The selected day in 'YYYY-MM-DD' format.
+        time (str): The selected time.
+
+    Returns:
+        bool: True if the day and time are available, False otherwise.
+    """
     try:
         appointment = Appointment.objects.get(day=day, time=time)
     except Appointment.DoesNotExist:
@@ -176,7 +223,16 @@ def is_day_and_time_available(day, time):
 
 
 def checkTime(times, day):
-    # Only show the time of the day that has not been selected before:
+    """
+    Check available times for a specific day.
+
+    Args:
+        times (list): List of available time slots.
+        day (str): The selected day in 'YYYY-MM-DD' format.
+
+    Returns:
+        list: List of available times for the specified day.
+    """
     x = []
     for k in times:
         if Appointment.objects.filter(day=day, time=k).count() < 1:

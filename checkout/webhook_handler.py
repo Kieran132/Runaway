@@ -14,7 +14,12 @@ import stripe
 
 
 class StripeWH_Handler:
-    """Handle Stripe webhooks"""
+    """
+    Handle Stripe webhooks.
+
+    This class provides methods to handle various webhook events from Stripe.
+    It handles successful and failed payment intents, as well as unknown events.
+    """
 
     def __init__(self, request):
         self.request = request

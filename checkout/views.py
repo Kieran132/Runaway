@@ -17,6 +17,20 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Cache checkout data for Stripe PaymentIntent.
+
+    This view handles caching of checkout data for a Stripe PaymentIntent.
+    It modifies the PaymentIntent metadata with bag contents, save info, and username.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The HTTP response status code.
+            - 200: Successful caching.
+            - 400: Error during caching.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +47,19 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Handle the checkout process.
+
+    This view handles the checkout process, including creating an order,
+    saving form data, and creating order line items. It also manages
+    Stripe payment integration and user profile association with the order.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The response rendered from the template.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -143,7 +170,18 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    Handle successful checkouts.
+
+    This view handles the success page after a successful checkout.
+    It associates the user profile with the order, saves user info,
+    and displays a confirmation message.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        order_number (str): The order number for the successful checkout.
+
+    Returns:
+        HttpResponse: The response rendered from the template.
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)

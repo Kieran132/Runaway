@@ -7,7 +7,17 @@ from shop.models import Product
 
 @login_required
 def wishlist(request):
-    # Fetch the user's wishlist
+    """
+    Display the user's wishlist containing their saved products.
+
+    Retrieves the wishlist items associated with the currently logged-in user
+    and renders the 'wishlist.html' template to display the list of wishlist
+    items.
+
+    Context:
+    - wishlist: Queryset containing the wishlist items for the user.
+
+    """
     wishlist = Wishlist.objects.filter(user=request.user)
 
     context = {
@@ -20,9 +30,19 @@ def wishlist(request):
 @login_required
 def add_to_wishlist(request, product_id):
     """
-    This function allows the user to add their chosen product to their wishlist
-    by using information from the Product model. Once added, a pop-up message
-    appears telling the user they have added a product.
+    Add a product to the user's wishlist.
+
+    If the product is not already in the user's wishlist, it is added to
+    the wishlist.
+    If the product is already in the wishlist, a warning message is displayed.
+    After adding the product, a success message is shown to the user.
+
+    Parameters:
+    - product_id: The ID of the product to be added to the wishlist.
+
+    Redirects:
+    - After processing, redirects the user back to the 'wishlist' page.
+
     """
     user = request.user
     product = get_object_or_404(Product, id=product_id)
@@ -42,7 +62,20 @@ def add_to_wishlist(request, product_id):
 
 @login_required
 def delete_wishlist_product(request, product_id):
-    """ Removes product from the user's wishlist """
+    """
+    Remove a product from the user's wishlist.
+
+    If the product is in the user's wishlist and the request is valid,
+    the product is removed from the wishlist and a success message is
+    displayed. If the request is invalid, an error message is displayed.
+
+    Parameters:
+    - product_id: The ID of the product to be removed from the wishlist.
+
+    Redirects:
+    - After processing, redirects the user back to the 'wishlist' page.
+
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     

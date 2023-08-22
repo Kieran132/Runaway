@@ -21,6 +21,18 @@ TIME_CHOICES = (
 
 
 class Appointment(models.Model):
+    """
+    Represents an appointment for a service.
+    Each appointment is associated with a user, a selected service, a specific day,
+    and a preferred time.
+    Attributes:
+        user (User): The user who made the appointment.
+        service (str): The selected service for the appointment.
+        day (datetime.date): The date of the appointment.
+        time (str): The preferred time of the appointment.
+    Methods:
+        __str__(): Returns a string representation of the appointment.
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE,
                              null=True, blank=True)
     service = models.CharField(max_length=50, choices=SERVICE_CHOICES,

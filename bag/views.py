@@ -3,12 +3,34 @@ from django.contrib import messages
 
 
 def view_bag(request):
-    """ A view to return the shopping bag page """
+    """
+    Display the shopping bag page.
+
+    This view renders the shopping bag page.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The response rendered from the template.
+    """
     return render(request, 'bag/bag.html')
 
 
 def adjust_bag(request, item_id):
-    """ Adjust quantity of the specified product to the shopping bag """
+    """
+    Adjust the quantity of a product in the shopping bag.
+
+    This view allows users to adjust the quantity of a specified product
+    in the shopping bag. It handles both quantity adjustments and removals.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        item_id (int): The ID of the product to be adjusted.
+
+    Returns:
+        HttpResponse: The response to redirect the user after adjustment.
+    """
 
     quantity = int(request.POST.get('quantity'))
     size = None
@@ -37,7 +59,19 @@ def adjust_bag(request, item_id):
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
+    """
+    Add a quantity of a product to the shopping bag.
+
+    This view adds a specified quantity of a product to the shopping bag.
+    It also handles the addition of products with different sizes.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        item_id (int): The ID of the product to be added.
+
+    Returns:
+        HttpResponse: The response to redirect the user after addition.
+    """
 
     quantity_str = request.POST.get('quantity')
     if quantity_str and quantity_str.isdigit():
@@ -72,7 +106,21 @@ def add_to_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
+    """
+    Remove an item from the shopping bag.
+
+    This view removes a specified item from the shopping bag.
+    It handles both regular products and products with sizes.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        item_id (int): The ID of the item to be removed.
+
+    Returns:
+        HttpResponse: The HTTP response status code.
+            - 200: Successful removal.
+            - 500: Internal server error during removal.
+    """
 
     try:
         size = None

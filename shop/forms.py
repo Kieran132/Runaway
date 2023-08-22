@@ -3,7 +3,22 @@ from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
+    """
+    Form class for creating and updating product instances.
 
+    This form class is used to create and update product instances based on
+    the Product model. It includes all fields from the model and customizes
+    the rendering of the 'category' field choices to display friendly names.
+    Additionally, it applies CSS styling to the form fields for consistent
+    appearance.
+
+    Attributes:
+        Meta:
+            model (Product): The model associated with the form.
+            fields (tuple): The fields from the model that will be included in
+            the form.
+                        Here, all fields from the Product model are included.
+    """
     class Meta:
         model = Product
         fields = '__all__'

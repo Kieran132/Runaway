@@ -5,7 +5,32 @@ from shop.models import Product
 
 
 def bag_contents(request):
+    """
+    Calculate and return bag contents and related information.
 
+    This function calculates the contents of the shopping bag,
+    including the items, their quantities, prices, and relevant totals.
+    It also determines the delivery cost and the grand total,
+    considering the free delivery threshold if applicable.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        dict: A dictionary containing bag-related information including:
+            - 'bag_items' (list): A list of dictionaries representing 
+               bag items, including item_id, quantity, product details,
+               and optionally size.
+            - 'total' (Decimal): The total cost of items in the bag.
+            - 'product_count' (int): The total count of products in the bag.
+            - 'delivery' (Decimal): The calculated delivery cost.
+            - 'free_delivery_delta' (Decimal): The remaining amount required 
+               to qualify for free delivery.
+            - 'free_delivery_threshold' (Decimal): The threshold amount 
+               for free delivery.
+            - 'grand_total' (Decimal): The total cost including items
+               and delivery.
+    """
     bag_items = []
     total = 0
     product_count = 0

@@ -9,7 +9,20 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """
+    View to display all products, including sorting and search functionality.
+
+    URL Parameters:
+    - sort: Specifies the field to sort the products by.
+    - direction: Specifies the sorting direction (asc or desc).
+    - category: Specifies the category to filter products by.
+    - q: Specifies the search query to filter products by name or description.
+
+    Renders 'shop/shop.html' template with the list of products and filters.
+
+    Returns:
+    - Rendered HTML template with context.
+    """
 
     products = Product.objects.all()
     query = None
@@ -58,7 +71,17 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show products on their own page """
+    """
+    View to display a single product's details.
+
+    Parameters:
+    - product_id: The ID of the product to display.
+
+    Renders 'shop/shop_detail.html' template with the product details.
+
+    Returns:
+    - Rendered HTML template with context.
+    """
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -70,7 +93,18 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """
+    View to add a new product to the store.
+
+    Requires user authentication.
+
+    Handles form submission to add a new product to the database.
+
+    Renders 'shop/add_product.html' template with the product form.
+
+    Returns:
+    - Rendered HTML template with context.
+    """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -93,7 +127,21 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """
+    View to edit an existing product in the store.
+
+    Parameters:
+    - product_id: The ID of the product to edit.
+
+    Requires user authentication.
+
+    Handles form submission to update an existing product in the database.
+
+    Renders 'shop/edit_product.html' template with the product form.
+
+    Returns:
+    - Rendered HTML template with context.
+    """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -119,7 +167,21 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the store """
+    """
+    View to delete a product from the store.
+
+    Parameters:
+    - product_id: The ID of the product to delete.
+
+    Requires user authentication.
+
+    Deletes the specified product from the database.
+
+    Redirects to the 'products' view after successful deletion.
+
+    Returns:
+    - Redirect response.
+    """
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
