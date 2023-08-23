@@ -1,5 +1,65 @@
 # Testing for Runaway Full Stack Development Project
 ---
+
+## User Stories
+
+#### Regular Site User Stories
+
+- As a user, I am looking for their next place to visit as I enjoy new and exciting beers
+    - Clear product images at top of the home page
+    - Home page is informative but not overwhelming to read
+    - The home page encourages the User to learn more
+
+    <img src="static/images/README-images/index-top-images.png">
+
+- As a user, I want the app to be easy and simple navigation through the app
+    - The navigation bar is clear, and dropdown title links are representative of what the pages are informing the user about
+    - All the buttons are bright, and bold and direct the user to the correct pages
+
+    <img src="static/images/README-images/navbar.png">
+
+- As a user, I want a simple understanding of what the app is about and its uses
+    - How the app is laid out, it is clear where the user would need to go to get their desired outcome. Shop provides all the products and highlights 
+      how the user can purchase. Contact Navigation button takes the user to a contact form page which is easy to input and submit.
+
+#### Customer User Stories 
+
+- As a customer, I want to be able to purchase products easily
+    - Implementing a stripe with the checkout function enables an easy purchasing process. Starting from the shop the customer can view the 
+      product in more detail. Then if desired, the customer can add to the shopping bag. From there, there is a button to direct the user to checkout with a form and input directions for the customer to complete their purchase. Finished off with purchase confirmation notification and email.#
+
+- As a customer, I want a shop overview and a chance to view the product in more detail
+    - Navigating to the shop page, each product card has a clear, bright button which will direct the customer to the product detail page. This is where 
+      the customer can read more information on that product and choose to either add the product to the shopping bag or continue shopping.
+
+      <img src="static/images/README-images/shop-about.png">
+
+- As a customer, I want to be able to view my shopping bag and adjust accordingly
+    - Once the customer has added product to their shoppinh bag, they will see a pop up message notifying them it has been done successfully. In the 
+      navigation bar alongside the cart icon, the total of the shopping bag is shown to the customer. Clicking on either the icon or total amount, direct the customer to the shopping bag page. Here the customer can see their chosen products and update the quantity accordingly. This change is reflected in the grand total.
+
+      <img src="static/images/README-images/shopping-bag.png">
+
+#### Logged In Customer Stories
+
+- As a logged-in user, I want the site to save my details
+    - As a logged in user, within the account navigation bar heading, there is a dropdown link to the users profile. Here the user will be able to see 
+      their saved details and update them is need be.
+
+      <img src="static/images/README-images/profile-details.png">
+
+- As a logged-in user, I want the ability to view previous order history
+    - As mentioned in the point above, within the users profile page in addition to their details, the user will also be able to see their previous     
+      order history. If the user clicks on the order number, it will direct them to that orders confirmation page with all the information.
+
+      <img src="static/images/README-images/profile-order-history.png">
+
+- As a logged-in user, I want email confirmation when booking a tour.
+    - Once the user has selected the date and time of their tour and submitted, they will receive and email (from their saved details) and also an email 
+      will be sent to Runaway confirming this tour.
+
+      <img src="static/images/booking-confirmation.png">
+
 ### Manual Testing
 
 #### Navigation Bar
@@ -75,6 +135,18 @@
 #### Pep8
 
 - All code written by myself adhered to Pep8 Validation
+
+#### Color Contrast Validation
+
+I put my project through color contrast validator to ensure that the colors used were accessible to everyone. However initially two errors came up, image below: 
+
+<img src="static/images/README-images/color-contrast-validator issue.png">
+
+To resolve this I amended the color accordingly which resulted in a pass, images below:
+
+<img src="static/images/README-images/color-contrast-ammended.png">
+
+<img src="static/images/README-images/color-contrast-ammended-2.png">
 
 ---
 ### Bugs/Issues and Resolutions

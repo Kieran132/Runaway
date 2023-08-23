@@ -69,7 +69,7 @@ In this design phase, I discussed with the people at Runaway Brewery to outline 
 
 - As a logged-in user, I want the site to save my details
 - As a logged-in user, I want the ability to view previous order history
-- As a logged-in user, I want email confirmation with either booking a tour or placing an order
+- As a logged-in user, I want email confirmation when booking a tour
 
 ---
 
@@ -261,6 +261,14 @@ Twitter - https://twitter.com/RunawayBrewery
 Instagram - https://www.instagram.com/runawaybrewery/
 
 In addition to these media platforms, I decided to add MailChimp to the project as another way for any user to sign up and receive letters or promotions. This increases the reach Runaway has to new or existing customers, enticing them to purchase their products
+
+#### SEO
+
+To determine which keywords are relevant and of most importance to the e-commerce site, I conducted an SEO to help me. To carry this out, I used Google Search Engine and typed the keywords to see what results I would get back. Below is the results of this search:
+
+<img src="static/images/README-images/SEO-google-search-two.png">
+
+<img src="static/images/README-images/SEO-google-search.png">
 
 ---
 
@@ -509,9 +517,6 @@ Connecting Heroku to AWS S3
         - PLEASE MAKE SURE media AND static FILES ARE PUBLICLY ACCESSIBLE UNDER PERMISSIONS
 
 ---
-
-
-
 
 ## Credits
 
