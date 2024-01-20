@@ -1,1 +1,1 @@
-web: gunicorn runaway.wsgi
+web: gunicorn tussock.wsgi
